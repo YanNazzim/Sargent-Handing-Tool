@@ -1,38 +1,346 @@
+/* src/App.css - Minimalist & Unified Design */
+
+/* Global Styles & Resets */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8; /* Very light, soft background */
+  line-height: 1.6;
+  color: #333;
+}
+
 .App {
+  max-width: 1000px; /* Slightly narrower for a more contained look */
+  margin: 40px auto;
+  padding: 30px; /* Increased padding */
+  background-color: #ffffff; /* Crisp white background for main content */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+  border-radius: 8px; /* Slightly softer corners */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: transparent; /* No background color */
+  padding: 20px 0; /* Reduced padding, no horizontal padding */
+  color: #2c3e50; /* Darker, sophisticated blue-grey for text */
+  margin-bottom: 40px; /* More space below header */
+  border-radius: 0; /* No radius, flat design */
+  box-shadow: none; /* No shadow */
+}
+
+.App-header h1 {
+  font-size: 2.8em; /* Larger, more impactful heading */
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 300; /* Lighter font weight for modern feel */
+  text-shadow: none; /* No text shadow */
+  color: #2c3e50; /* Ensure dark color */
+}
+
+/* Category Selection (Navigation) */
+.category-selection {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* More space between buttons */
+  margin-bottom: 50px; /* More space below navigation */
+  flex-wrap: wrap;
+}
+
+.category-selection button {
+  background-color: transparent; /* Transparent background */
+  color: #2c3e50; /* Dark text */
+  border: none; /* No border */
+  padding: 12px 25px;
+  border-radius: 0; /* Sharp corners */
+  cursor: pointer;
+  font-size: 1.15em; /* Slightly larger font */
+  font-weight: 500; /* Medium font weight */
+  transition: all 0.3s ease;
+  position: relative; /* For the underline effect */
+  box-shadow: none; /* No shadow */
+}
+
+.category-selection button::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #007bff; /* Underline color */
+  transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+
+.category-selection button:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.category-selection button.active {
+  color: #007bff; /* Active button text color */
+  font-weight: 600; /* Bolder for active */
+}
+
+.category-selection button.active::after {
+  width: 100%; /* Active button has full underline */
+  left: 0;
+  background-color: #007bff;
+}
+
+
+/* Product Display Area */
+.product-display {
+  background-color: transparent; /* No background color */
+  border: none; /* No border */
+  padding: 0; /* No padding */
+  margin-top: 0;
+  border-radius: 0;
+  min-height: auto; /* Allow height to adjust naturally */
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: none; /* No shadow */
+}
+
+.product-display h2 {
+  color: #2c3e50;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0; /* Very subtle thin line */
+  padding-bottom: 15px;
+  width: 100%;
+  max-width: 600px;
+  font-weight: 400; /* Lighter font weight */
+}
+
+/* Select Dropdowns */
+.product-display select {
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 5px; /* Slight radius for form elements */
+  border: 1px solid #d0d0d0; /* Very light border */
+  width: 320px; /* Consistent width */
+  font-size: 1.05rem;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03); /* Extremely subtle inner shadow */
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%232c3e50%22%20d%3D%22M287%20197.39L146.2%206.6a18%2018%200%2000-25.5%200l-140.8%20190.79c-5.3%207.2-1.7%2017.3%208.5%2017.3h279.7c10.2%200%2013.8-10.1%208.5-17.3z%22%2F%3E%3C%2Fsvg%3E'); /* Darker arrow */
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px auto;
+  cursor: pointer;
+}
+
+.product-display select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1); /* Subtle focus ring */
+}
+
+/* Handing Details Sections - Unified look */
+.handing-details,
+.handed-info,
+.reversible-info {
+  margin-top: 40px; /* More vertical separation */
+  padding: 0; /* No padding on these wrappers, content handles it */
+  border-radius: 0;
+  width: 100%; /* Take full width within product-display */
+  max-width: 800px; /* Increased max-width for content */
+  box-shadow: none; /* No shadow */
+  text-align: left;
+}
+
+.handing-details h4 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0; /* Even lighter border */
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.handing-details p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.8; /* More comfortable line height */
+}
+
+/* Warning & Positive Messages - Subtle containers */
+.warning,
+.positive {
+  font-weight: 500;
+  padding: 18px 25px; /* Generous padding */
+  border-radius: 6px;
+  font-size: 1.1em;
+  margin-bottom: 30px; /* More space below message */
+  text-align: left; /* Align text within message boxes */
+}
+
+.warning {
+  color: #c0392b;
+  background-color: #fffafa; /* Very subtle background */
+  border: 1px solid #f9dcdc; /* Thin, light border */
+}
+
+.positive {
+  color: #27ae60;
+  background-color: #f9fffb; /* Very subtle background */
+  border: 1px solid #d4eddb;
+}
+
+/* Visuals Container - Clean and spaced */
+.visuals {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 40px; /* More space between images */
+  margin-top: 40px; /* More space above visuals */
+  background-color: transparent; /* No background */
+  padding: 0; /* No padding */
+  border: none; /* No border */
 }
 
-.App-link {
-  color: #61dafb;
+.visuals div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 0 calc(25% - 30px); /* Adjusting flex basis for 4 items per row on large screens */
+  max-width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.visuals img {
+  width: 100%;
+  max-width: 150px; /* Slightly smaller maximum size */
+  height: auto;
+  border: none; /* No border around images */
+  border-radius: 5px; /* Minimal border radius */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Lighter, softer shadow */
+  transition: transform 0.2s ease-in-out;
+}
+
+.visuals img:hover {
+  transform: translateY(-5px); /* Lift slightly on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+.visuals p {
+  margin-top: 12px;
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #2c3e50; /* Match main text color */
+}
+
+/* Specific Sections - Keep them simple */
+.exit-devices-section,
+.lock-details-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.functions-section {
+  margin-top: 40px;
+  padding: 0; /* No padding */
+  border: none; /* No border */
+  border-radius: 0;
+  background-color: transparent; /* No background */
+  box-shadow: none; /* No shadow */
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.functions-section h3 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ededed; /* Very faint line */
+  padding-bottom: 12px;
+  width: 100%;
+  max-width: 500px;
+  font-weight: 400;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .App {
+    margin: 20px auto;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-header h1 {
+    font-size: 2.2em;
+  }
+
+  .category-selection {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .category-selection button {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.05em;
+  }
+
+  .product-display select {
+    width: 95%;
+  }
+
+  .handing-details,
+  .handed-info,
+  .reversible-info,
+  .functions-section {
+    width: 95%;
+  }
+
+  .visuals {
+    gap: 20px;
+  }
+
+  .visuals div {
+    flex: 0 0 calc(50% - 10px); /* 2 items per row on smaller tablets */
+  }
+
+  .visuals img {
+    max-width: 120px;
   }
 }
+
+@media (max-width: 480px) {
+  .App-header h1 {
+    font-size: 1.8em;
+  }
+
+  .category-selection button {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+
+  .visuals div {
+    flex: 0 0 calc(50% - 10px); /* Still 2 items per row */
+  }
+
+  .visuals img {
+    max-width: 100px;
+  }
+
+  .warning,
+  .positive {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
+}
+
+.logo {
+  border-radius: 25px;
+} 
