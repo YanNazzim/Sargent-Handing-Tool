@@ -1,5 +1,7 @@
 // src/data.js
 
+import { Images } from "./images/images";
+
 export const productData = {
   exitDevices: [
     {
@@ -10,22 +12,122 @@ export const productData = {
           functionCode: "8304",
           handing: "handed", // or "reversible"
           explanation:
-            "This function is handed due to the specific trim interaction requiring precise orientation.",
+          "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
           visuals: {
-            lh: "/images/lh_door.png", // Placeholder for LH image
-            rh: "/images/rh_door.png", // Placeholder for RH image
-            lhr: "/images/lhr_door.png", // Placeholder for LHR image
-            rhr: "/images/rhr_door.png", // Placeholder for RHR image
+            lh: Images.lh,
+            rh: Images.rh,
+            lhr: Images.lhr,
+            rhr: Images.rhr,
           },
         },
         {
           functionCode: "8310",
-          handing: "reversible",
+          handing: "handed",
           explanation:
-            "This function is fully reversible and does not require specific handing.",
-          visuals: {
-            generic: "/images/logo.png", // Placeholder for reversible image
-          },
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
+        },
+
+        {
+          functionCode: "8315",
+          handing: "handed",
+          explanation:
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
+        },
+        {
+          functionCode: "8340",
+          handing: "handed",
+          explanation:
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
+        },
+        {
+          functionCode: "8343",
+          handing: "handed",
+          explanation:
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
+        },
+        {
+          functionCode: "8344",
+          handing: "handed",
+          explanation:
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
+        },
+        {
+          functionCode: "8373",
+          handing: "handed",
+          explanation:
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
+        },
+        {
+          functionCode: "8374",
+          handing: "handed",
+          explanation:
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
+        },
+        {
+          functionCode: "8375",
+          handing: "handed",
+          explanation:
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
+        },
+        {
+          functionCode: "8376",
+          handing: "handed",
+          explanation:
+            "The Lift Lever in the chassis is what makes this handed. The 900 Series lockbody is ALSO Handed.",
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
       ],
     },
@@ -38,21 +140,24 @@ export const productData = {
           handing: "reversible",
           explanation:
             "This function is fully reversible and does not require specific handing.",
-          visuals: {
-            generic: "/images/logo.png",
-          },
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
         {
           functionCode: "8413",
           handing: "handed",
           explanation:
             "This function is handed because of the internal mechanism's orientation.",
-          visuals: {
-            lh: "/images/lh_door.png",
-            rh: "/images/rh_door.png",
-            lhr: "/images/lhr_door.png",
-            rhr: "/images/rhr_door.png",
-          },
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
       ],
     },
@@ -65,18 +170,24 @@ export const productData = {
           handing: "reversible",
           explanation:
             "This function is fully reversible and does not require specific handing.",
-          visuals: {
-            generic: "/images/logo.png",
-          },
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
         {
           functionCode: "8510",
           handing: "reversible",
           explanation:
             "This function is fully reversible and does not require specific handing.",
-          visuals: {
-            generic: "/images/logo.png",
-          },
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
       ],
     },
@@ -89,12 +200,12 @@ export const productData = {
           handing: "handed",
           explanation:
             "This function is handed because of the specific cylinder engagement.",
-          visuals: {
-            lh: "/images/lh_door.png",
-            rh: "/images/rh_door.png",
-            lhr: "/images/lhr_door.png",
-            rhr: "/images/rhr_door.png",
-          },
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
       ],
     },
@@ -107,9 +218,12 @@ export const productData = {
           handing: "reversible",
           explanation:
             "This function is fully reversible and does not require specific handing.",
-          visuals: {
-            generic: "/images/logo.png",
-          },
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
       ],
     },
@@ -122,12 +236,12 @@ export const productData = {
           handing: "handed",
           explanation:
             "This function is handed due to the specific trim design.",
-          visuals: {
-            lh: "/images/lh_door.png",
-            rh: "/images/rh_door.png",
-            lhr: "/images/lhr_door.png",
-            rhr: "/images/rhr_door.png",
-          },
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
       ],
     },
@@ -140,9 +254,12 @@ export const productData = {
           handing: "reversible",
           explanation:
             "This function is fully reversible and does not require specific handing.",
-          visuals: {
-            generic: "/images/logo.png",
-          },
+            visuals: {
+              lh: Images.lh,
+              rh: Images.rh,
+              lhr: Images.lhr,
+              rhr: Images.rhr,
+            },
         },
       ],
     },
@@ -154,23 +271,26 @@ export const productData = {
       handing: "handed",
       explanation:
         "Mortise locks are inherently handed due to the design of the latchbolt and auxiliary latch. You must specify LH, RH, LHR, or RHR.",
-      visuals: {
-        lh: "/images/lh_door.png",
-        rh: "/images/rh_door.png",
-        lhr: "/images/lhr_door.png",
-        rhr: "/images/rhr_door.png",
-      },
+        visuals: {
+          lh: Images.lh,
+          rh: Images.rh,
+          lhr: Images.lhr,
+          rhr: Images.rhr,
+        },
     },
   ],
   boredLocks: [
     {
       type: "All Bored Locks",
-      handing: "reversible",
+      handing: "handed",
       explanation:
         "Bored locks are typically reversible in the field and do not require specific handing unless a specific trim requires it.",
-      visuals: {
-        generic: "/images/logo.png",
-      },
+        visuals: {
+          lh: Images.lh,
+          rh: Images.rh,
+          lhr: Images.lhr,
+          rhr: Images.rhr,
+        },
     },
   ],
 };

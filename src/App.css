@@ -284,13 +284,16 @@ body {
 .visuals {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 25px; /* Slightly reduced gap for card effect */
   margin-top: 40px;
   background-color: transparent; /* Changed to transparent, individual cards have background */
   padding: 0; /* Removed padding from container */
   border: none; /* No border for container */
   box-shadow: none; /* No shadow for container */
+  text-align: center;
 }
 
 /* Styling for each individual handing card */
@@ -320,7 +323,7 @@ body {
 
 .visuals img {
   width: 100%;
-  max-width: 120px; /* Reduced max-width to fit better in cards */
+  max-width: 240px; /* Reduced max-width to fit better in cards */
   height: auto;
   border: 4px solid #fff; /* Thicker white border */
   border-radius: 10px; /* Rounded rectangles */
