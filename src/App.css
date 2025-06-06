@@ -584,3 +584,102 @@ body {
     font-size: 1.6em;
   }
 }
+
+/* --- Modal Styles --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px; /* Increased padding to create space around the image */
+  padding-top: 50px; /* Extra padding at the top for the X button */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Changed to column to stack X button space and image */
+  justify-content: center;
+  align-items: center;
+  animation: scaleIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.modal-close-button {
+  position: absolute; /* Positioned absolutely relative to .modal-content */
+  top: 8px; /* Adjust top positioning as needed */
+  right: 8px; /* Adjust right positioning as needed */
+  background-color: #ff2d55;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* Ensure close button is on top */
+}
+
+.modal-close-button:hover {
+  background-color: #ff5e7f;
+  transform: rotate(90deg);
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 75vh; /* Adjusted max-height to ensure space for the button/padding */
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Add these media queries for the modal close button */
+@media (max-width: 768px) {
+  .modal-close-button {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2em;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-close-button {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    top: 8px;
+    right: 8px;
+  }
+}
