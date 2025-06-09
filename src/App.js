@@ -209,6 +209,7 @@ function App() {
               isClearable // Allows clearing the selection
               isSearchable // Enables search functionality
               styles={customSelectStyles} // Apply our defined custom styles
+              menuPortalTarget={document.body} // <--- ADD THIS
               menuPlacement="top" // Automatically opens menu up or down based on space
             />
           </div>
@@ -226,6 +227,8 @@ function App() {
                   isSearchable
                   styles={customSelectStyles}
                   menuPlacement="top" // Automatically opens menu up or down based on space
+                  menuPortalTarget={document.body} // <--- ADD THIS
+
                 />
               </div>
 
