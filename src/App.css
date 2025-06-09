@@ -339,7 +339,7 @@ body {
 
 .visuals img {
   width: 100%; /* Image fills its card width */
-  max-width: 250px; /* Set a large max-width for the image itself */
+  width: 180px; /* Set a large max-width for the image itself */
   height: auto;
   border: 4px solid #fff;
   border-radius: 10px;
