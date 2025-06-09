@@ -35,11 +35,11 @@ const customSelectStyles = {
   menu: (provided) => ({
     ...provided,
     borderRadius: '8px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', // Softer, larger shadow for depth
-    marginTop: '8px', // Space between the control and the dropdown menu
-    zIndex: 9999, // Ensures the menu appears above other content on the page
-    maxHeight: '3000px', // Sets a maximum height for the dropdown menu
-    overflowY: 'auto',   // Enables vertical scrolling within the menu if content exceeds maxHeight
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+    marginTop: '0px', // Set to 0 or remove this line when using menuPortalTarget
+    zIndex: 9999,
+    maxHeight: '250px',
+    overflowY: 'auto',
   }),
   option: (provided, state) => ({
     ...provided,
