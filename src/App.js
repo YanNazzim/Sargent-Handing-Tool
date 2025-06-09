@@ -4,6 +4,7 @@ import Select from 'react-select'; // Import react-select
 import './App.css'; // Your general app CSS
 import { productData } from './data';
 import { Images } from './images/images';
+import CustomMenu from './components/CustomMenu';
 
 // --- Custom Styles for react-select ---
 // This object defines the visual appearance for various parts of the Select component.
@@ -38,8 +39,6 @@ const customSelectStyles = {
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
     marginTop: '0px', // Set to 0 or remove this line when using menuPortalTarget
     zIndex: 9999,
-    maxHeight: '250px',
-    overflowY: 'auto',
   }),
   option: (provided, state) => ({
     ...provided,
@@ -211,6 +210,8 @@ function App() {
               styles={customSelectStyles}
               menuPlacement="top"
               menuPortalTarget={document.body} // <--- ADD THIS LINE
+                            components={{ Menu: CustomMenu }} // <--- ADD THIS LINE
+
             />
           </div>
 
@@ -228,6 +229,8 @@ function App() {
                   styles={customSelectStyles}
                   menuPlacement="top"
                   menuPortalTarget={document.body} // <--- ADD THIS LINE
+                                components={{ Menu: CustomMenu }} // <--- ADD THIS LINE
+
                 />
               </div>
 
