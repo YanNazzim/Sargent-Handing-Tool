@@ -200,35 +200,34 @@ function App() {
       return (
         <div className="exit-devices-section">
           <h2>Exit Devices</h2>
-          <div style={{ marginBottom: '15px' }}> {/* Spacing below the select */}
+          <div style={{ marginBottom: '15px' }}>
             <Select
-              options={seriesOptions} // Grouped options for series (8000 Series, PE8000 Series)
+              options={seriesOptions}
               onChange={handleSeriesChange}
-              value={selectedSeriesOption} // Controlled component value
+              value={selectedSeriesOption}
               placeholder="Select a Series"
-              isClearable // Allows clearing the selection
-              isSearchable // Enables search functionality
-              styles={customSelectStyles} // Apply our defined custom styles
-              menuPortalTarget={document.body} // <--- ADD THIS
-              menuPlacement="top" // Automatically opens menu up or down based on space
+              isClearable
+              isSearchable
+              styles={customSelectStyles}
+              menuPlacement="top"
+              menuPortalTarget={document.body} // <--- ADD THIS LINE
             />
           </div>
 
-          {selectedSeriesOption && ( // Only show functions if a series is selected
+          {selectedSeriesOption && (
             <div className="functions-section">
               <h3>Functions for {selectedSeriesOption.label}</h3>
               <div style={{ marginBottom: '15px' }}>
                 <Select
-                  options={functionOptions} // Dynamically generated function options
+                  options={functionOptions}
                   onChange={handleFunctionChange}
                   value={selectedFunctionOption}
                   placeholder="Select a Function"
                   isClearable
                   isSearchable
                   styles={customSelectStyles}
-                  menuPlacement="top" // Automatically opens menu up or down based on space
-                  menuPortalTarget={document.body} // <--- ADD THIS
-
+                  menuPlacement="top"
+                  menuPortalTarget={document.body} // <--- ADD THIS LINE
                 />
               </div>
 
