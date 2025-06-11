@@ -284,6 +284,11 @@ body {
 }
 
 /* --- Visuals Container (Card-based Layout) --- */
+
+.explanation-link, .explanation-paragraph, .explanation-bullet-list, .explanation-bullet-item {
+  text-align: center;
+}
+
 .visuals {
   display: flex;
   flex-wrap: wrap;

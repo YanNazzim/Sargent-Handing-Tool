@@ -1,10 +1,11 @@
 // src/App.js
 import React, { useState } from 'react';
-import Select from 'react-select'; // Import react-select
+import Select from 'react-select';
 import './App.css'; // Your general app CSS
 import { productData } from './data';
-import { Images } from './images/images';
-import CustomMenu from './components/CustomMenu';
+import { Images } from './images/images'; // Import Images object from src/images/images.js
+import CustomMenu from './components/CustomMenu'; // Assuming you have this component
+import ExplanationRenderer from './components/ExplanationRenderer'; // Import the new ExplanationRenderer
 
 // --- Custom Styles for react-select ---
 // This object defines the visual appearance for various parts of the Select component.
@@ -38,7 +39,7 @@ const customSelectStyles = {
     borderRadius: '8px',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
     marginTop: '0px', // Set to 0 or remove this line when using menuPortalTarget
-    zIndex: 9999,
+    zIndex: 9999, // Ensure the dropdown menu is on top
   }),
   option: (provided, state) => ({
     ...provided,
@@ -93,7 +94,6 @@ const customSelectStyles = {
 // --- Data Transformation Function ---
 // This function reshapes your raw productData into the grouped format
 // that `react-select` expects for its `options` prop.
-// You can keep this in `src/utils/dataTransformers.js` for larger applications.
 const transformExitDevicesForSelect = (data) => {
   const groupedOptions = {};
 
@@ -103,7 +103,7 @@ const transformExitDevicesForSelect = (data) => {
 
     if (!groupedOptions[category]) {
       groupedOptions[category] = {
-        label: category, // This will be the visible group heading (e.g., "8000 Series")
+        label: category, // This will be the visible group heading (e.g., "80 Series")
         options: []
       };
     }
@@ -121,6 +121,7 @@ const transformExitDevicesForSelect = (data) => {
 // --- Modal Component ---
 // This component displays an enlarged image in a modal overlay.
 // It's a good candidate for its own file (e.g., `src/components/ImageModal.js`).
+// Ensure this file exists and contains the code I previously provided for it.
 const ImageModal = ({ imageUrl, onClose }) => {
   if (!imageUrl) return null; // Don't render the modal if no image URL is provided
 
@@ -142,7 +143,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSeriesOption, setSelectedSeriesOption] = useState(null); // Stores the full react-select option object
   const [selectedFunctionOption, setSelectedFunctionOption] = useState(null); // Stores the full react-select option object
-  const [modalImageUrl, setModalImageUrl] = useState(null);
+  const [modalImageUrl, setModalImageUrl] = useState(null); // State for modal image URL
 
   // Options for the Series dropdown, generated from productData (grouped by category)
   const seriesOptions = transformExitDevicesForSelect(productData);
@@ -209,9 +210,8 @@ function App() {
               isSearchable
               styles={customSelectStyles}
               menuPlacement="top"
-              menuPortalTarget={document.body} // <--- ADD THIS LINE
-                            components={{ Menu: CustomMenu }} // <--- ADD THIS LINE
-
+              menuPortalTarget={document.body}
+              components={{ Menu: CustomMenu }}
             />
           </div>
 
@@ -228,24 +228,23 @@ function App() {
                   isSearchable
                   styles={customSelectStyles}
                   menuPlacement="top"
-                  menuPortalTarget={document.body} // <--- ADD THIS LINE
-                                components={{ Menu: CustomMenu }} // <--- ADD THIS LINE
-
+                  menuPortalTarget={document.body}
+                  components={{ Menu: CustomMenu }}
                 />
               </div>
 
               {currentFunctionDetails && ( // Only show details if a function is selected
                 <div className="handing-details">
                   <h4>Details for Function {currentFunctionDetails.functionCode}</h4>
-                  {/* Conditional rendering based on 'handing' property */}
+                  {/* Now uses ExplanationRenderer for structured content */}
                   {currentFunctionDetails.handing === "handed" ? (
                     <div className="handed-info">
                       <p className="warning">WARNING: This device and function combination is HANDED.</p>
-                      <p>{currentFunctionDetails.explanation}</p>
+                      <ExplanationRenderer contentArray={currentFunctionDetails.explanation} /> {/* <-- NEW */}
                       <div className="visuals">
                         {/* Map through visuals for handed products */}
-                        {Object.entries(currentFunctionDetails.visuals || {}).map(([key, value]) => (
-                          <div key={key} className="handing-card">
+                        {Object.entries(currentFunctionDetails.visuals || {}).map(([key, value], index) => (
+                          <div key={key} className="handing-card" style={{ '--i': index }}>
                             <img src={value} alt={key} onClick={() => openModal(value)} />
                             <p>{key.toUpperCase()}</p>
                           </div>
@@ -255,9 +254,9 @@ function App() {
                   ) : (
                     <div className="reversible-info">
                       <p className="positive">GOOD NEWS: This device and function combination is REVERSIBLE.</p>
-                      <p>{currentFunctionDetails.explanation}</p>
+                      <ExplanationRenderer contentArray={currentFunctionDetails.explanation} /> {/* <-- NEW */}
                       <div className="visuals">
-                        <div className="handing-card">
+                        <div className="handing-card" style={{ '--i': 0 }}>
                           <img src={currentFunctionDetails.visuals.generic} alt="Reversible" onClick={() => openModal(currentFunctionDetails.visuals.generic)} />
                           <p>Reversible Product</p>
                         </div>
@@ -280,10 +279,10 @@ function App() {
           {lockData.handing === "handed" ? (
             <div className="handed-info">
               <p className="warning">WARNING: This product type is HANDED.</p>
-              <p>{lockData.explanation}</p>
+              <ExplanationRenderer className="explanation" contentArray={lockData.explanation} /> {/* <-- NEW */}
               <div className="visuals">
-                {Object.entries(lockData.visuals || {}).map(([key, value]) => (
-                  <div key={key} className="handing-card">
+                {Object.entries(lockData.visuals || {}).map(([key, value], index) => (
+                  <div key={key} className="handing-card" style={{ '--i': index }}>
                     <img src={value} alt={key} onClick={() => openModal(value)} />
                     <p>{key.toUpperCase()}</p>
                   </div>
@@ -293,9 +292,9 @@ function App() {
           ) : (
             <div className="reversible-info">
               <p className="positive">GOOD NEWS: This product type is REVERSIBLE.</p>
-              <p>{lockData.explanation}</p>
+              <ExplanationRenderer contentArray={lockData.explanation} /> {/* <-- NEW */}
               <div className="visuals">
-                <div className="handing-card">
+                <div className="handing-card" style={{ '--i': 0 }}>
                   <img src={lockData.visuals.generic} alt="Reversible" onClick={() => openModal(lockData.visuals.generic)} />
                   <p>Reversible Product</p>
                 </div>
@@ -336,6 +335,7 @@ function App() {
         {renderProductDetails()}
       </main>
 
+      {/* Render the modal component */}
       <ImageModal imageUrl={modalImageUrl} onClose={closeModal} />
     </div>
   );
