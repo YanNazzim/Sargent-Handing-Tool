@@ -77,7 +77,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -89,7 +89,8 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Classroom - Key Outside Unlocks/locks Trim.",
+              content:
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
             {
               type: "bullet",
@@ -149,7 +150,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -186,7 +187,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -198,7 +199,8 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+              content:
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
             {
               type: "bullet",
@@ -342,7 +344,8 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Electrified ET Trim Fail Safe | Key Retracts Latch (Power Off = Unlocked).",
+              content:
+                "Electrified ET Trim Fail Safe | Key Retracts Latch (Power Off = Unlocked).",
             },
             {
               type: "bullet",
@@ -417,7 +420,6 @@ export const productData = {
       description:
         "Sargent 8400 Series Narrow Design Concealed Vertical Rod Exit Devices.",
       functions: [
-
         {
           functionCode: "8406",
           handing: "handed",
@@ -445,7 +447,8 @@ export const productData = {
               type: "link",
               content: "8400 Parts Pages (4-9) to find lift lever",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=4",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -493,7 +496,11 @@ export const productData = {
           functionCode: "8413",
           handing: "handed",
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim." },
+            {
+              type: "paragraph",
+              content:
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
+            },
             {
               type: "bullet",
               content: "Lift Lever is what makes this handed",
@@ -513,7 +520,8 @@ export const productData = {
               type: "link",
               content: "8400 Parts Pages (4-9) to find lift lever",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=4",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -597,7 +605,8 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+              content:
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
             {
               type: "bullet",
@@ -618,7 +627,8 @@ export const productData = {
               type: "link",
               content: "8400 Parts Pages (4-9) to find lift lever",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=4",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -667,7 +677,10 @@ export const productData = {
           functionCode: "8473",
           handing: "handed",
           explanation: [
-            { type: "paragraph", content: "Electrified ET Trim Fail Safe (Power off = Unlocked)." },
+            {
+              type: "paragraph",
+              content: "Electrified ET Trim Fail Safe (Power off = Unlocked).",
+            },
             {
               type: "bullet",
               content: "Lift Lever is what makes this handed",
@@ -700,7 +713,10 @@ export const productData = {
           functionCode: "8474",
           handing: "handed",
           explanation: [
-            { type: "paragraph", content: "Electrified ET Trim Fail Secure (Power off = Locked)." },
+            {
+              type: "paragraph",
+              content: "Electrified ET Trim Fail Secure (Power off = Locked).",
+            },
             {
               type: "bullet",
               content: "Lift Lever is what makes this handed",
@@ -744,12 +760,12 @@ export const productData = {
               type: "paragraph",
               content: "Night Latch - Key Retracts Latch",
             },
-                        {
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -762,7 +778,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -776,12 +792,12 @@ export const productData = {
               type: "paragraph",
               content: "Key unlocks Trim and Trim retracts latch.",
             },
-                        {
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -791,9 +807,10 @@ export const productData = {
               type: "link",
               content: "8500 Parts Pages (10 & 11)",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10",
-            },          ],
+            },
+          ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -807,12 +824,12 @@ export const productData = {
               type: "paragraph",
               content: "No outside operation or Pull Only.",
             },
-                        {
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -825,7 +842,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -835,13 +852,17 @@ export const productData = {
           functionCode: "8513",
           handing: "reversible",
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim." },
-                        {
+            {
+              type: "paragraph",
+              content:
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
+            },
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -851,9 +872,10 @@ export const productData = {
               type: "link",
               content: "8500 Parts Pages (10 & 11)",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10",
-            },          ],
+            },
+          ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -864,12 +886,12 @@ export const productData = {
           handing: "reversible",
           explanation: [
             { type: "paragraph", content: "Passage Only." },
-                        {
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -881,8 +903,8 @@ export const productData = {
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10",
             },
           ],
-           visuals: {
-                        lh: Images.lh,
+          visuals: {
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -897,12 +919,12 @@ export const productData = {
               content:
                 "Freewheeling Trim with No outside operation (Dummy Trim).",
             },
-                        {
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -915,7 +937,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -927,14 +949,15 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+              content:
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
-                        {
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -944,9 +967,10 @@ export const productData = {
               type: "link",
               content: "8500 Parts Pages (10 & 11)",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=10",
-            },          ],
+            },
+          ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -960,12 +984,12 @@ export const productData = {
               type: "paragraph",
               content: "Freewheeling Trim with Key Retracts Latch.",
             },
-                        {
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -978,7 +1002,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -993,12 +1017,12 @@ export const productData = {
               content:
                 "Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
             },
-                        {
+            {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1011,7 +1035,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1021,13 +1045,16 @@ export const productData = {
           functionCode: "8573",
           handing: "reversible",
           explanation: [
-            { type: "paragraph", content: "Electrified ET Trim Fail Safe (Power off = Unlocked)." },
+            {
+              type: "paragraph",
+              content: "Electrified ET Trim Fail Safe (Power off = Unlocked).",
+            },
             {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                                    {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1040,7 +1067,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1050,13 +1077,16 @@ export const productData = {
           functionCode: "8574",
           handing: "reversible",
           explanation: [
-            { type: "paragraph", content: "Electrified ET Trim Fail Secure (Power off = Locked)." },
+            {
+              type: "paragraph",
+              content: "Electrified ET Trim Fail Secure (Power off = Locked).",
+            },
             {
               type: "bullet",
               content:
                 "This function is fully reversible and does not require specific handing.",
             },
-                                    {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1069,7 +1099,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1082,7 +1112,6 @@ export const productData = {
       category: "80 Series",
       description: "Sargent 8600 Series Concealed Vertical Rod Exit Devices.",
       functions: [
-
         {
           functionCode: "8606",
           handing: "handed",
@@ -1093,7 +1122,8 @@ export const productData = {
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1108,9 +1138,10 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (12-21) to find chassis",
+              content: "8600 Parts Pages (12-25) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -1128,7 +1159,8 @@ export const productData = {
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1143,7 +1175,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (12-21) to find chassis",
+              content: "8600 Parts Pages (12-25) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
             },
           ],
@@ -1158,7 +1190,11 @@ export const productData = {
           functionCode: "8613",
           handing: "handed",
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim." },
+            {
+              type: "paragraph",
+              content:
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
+            },
             { type: "bullet", content: "Key operation makes this handed." },
           ],
           visuals: {
@@ -1175,7 +1211,8 @@ export const productData = {
             { type: "paragraph", content: "Passage Only." },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1190,7 +1227,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (12-21) to find chassis",
+              content: "8600 Parts Pages (12-25) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
             },
           ],
@@ -1212,7 +1249,8 @@ export const productData = {
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1227,7 +1265,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (12-21) to find chassis",
+              content: "8600 Parts Pages (12-25) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
             },
           ],
@@ -1244,11 +1282,13 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+              content:
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1263,9 +1303,10 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (12-21) to find chassis",
+              content: "8600 Parts Pages (12-25) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -1284,7 +1325,8 @@ export const productData = {
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1299,7 +1341,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (12-21) to find chassis",
+              content: "8600 Parts Pages (12-25) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
             },
           ],
@@ -1317,7 +1359,8 @@ export const productData = {
             { type: "paragraph", content: "Electrified ET Trim Fail Safe." },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1332,7 +1375,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (12-21) to find chassis",
+              content: "8600 Parts Pages (12-25) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
             },
           ],
@@ -1350,7 +1393,8 @@ export const productData = {
             { type: "paragraph", content: "Electrified ET Trim Fail Secure." },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1365,7 +1409,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (12-21) to find chassis",
+              content: "8600 Parts Pages (12-25) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
             },
           ],
@@ -1389,11 +1433,13 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Key unlocks Trim and Trim retracts latch.",
+              content:
+                "Storeroom - Key unlocks Trim and Trim retracts latch. Trim Relocks when key is removed",
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1408,9 +1454,10 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -1428,7 +1475,8 @@ export const productData = {
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1443,7 +1491,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
             },
           ],
@@ -1458,10 +1506,15 @@ export const productData = {
           functionCode: "8713",
           handing: "handed",
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim." },
+            {
+              type: "paragraph",
+              content:
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
+            },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1476,9 +1529,10 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -1491,9 +1545,10 @@ export const productData = {
           handing: "handed",
           explanation: [
             { type: "paragraph", content: "Passage Only." },
-             {
+            {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1508,7 +1563,45 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
+            },
+          ],
+          visuals: {
+            lh: Images.lh,
+            rh: Images.rh,
+            lhr: Images.lhr,
+            rhr: Images.rhr,
+          },
+        },
+        {
+          functionCode: "8728",
+          handing: "handed",
+          explanation: [
+            {
+              type: "paragraph",
+              content:
+                "Passage - Thumbpiece always retracts latch (Free Entry).",
+            },
+            {
+              type: "bullet",
+              content:
+                "The thumbpiece is what makes this handed (need either new thumbpiece or full trim)",
+            },
+            {
+              type: "bullet",
+              content:
+                "New thumbpiece/trims part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
             },
           ],
@@ -1530,7 +1623,8 @@ export const productData = {
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1545,7 +1639,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
             },
           ],
@@ -1562,11 +1656,13 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+              content:
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1581,9 +1677,10 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -1602,7 +1699,8 @@ export const productData = {
             },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1617,7 +1715,83 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
+            },
+          ],
+          visuals: {
+            lh: Images.lh,
+            rh: Images.rh,
+            lhr: Images.lhr,
+            rhr: Images.rhr,
+          },
+        },
+        {
+          functionCode: "8762",
+          handing: "handed",
+          explanation: [
+            {
+              type: "paragraph",
+              content:
+                "Storeroom - Key unlocks thumbpiece and thumbpiece retracts latch. Trim Relocks when key is removed.",
+            },
+            {
+              type: "bullet",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
+            },
+            {
+              type: "bullet",
+              content:
+                "New chassis part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8700 Parts Pages (26-45) to find chassis",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
+            },
+          ],
+          visuals: {
+            lh: Images.lh,
+            rh: Images.rh,
+            lhr: Images.lhr,
+            rhr: Images.rhr,
+          },
+        },
+        {
+          functionCode: "8763",
+          handing: "handed",
+          explanation: [
+            {
+              type: "paragraph",
+              content:
+                "Classroom - Key unlocks thumbpiece and thumbpiece retracts latch. Trim can remain unlocked if wanted.",
+            },
+            {
+              type: "bullet",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
+            },
+            {
+              type: "bullet",
+              content:
+                "New chassis part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
             },
           ],
@@ -1635,7 +1809,8 @@ export const productData = {
             { type: "paragraph", content: "Electrified ET Trim Fail Safe." },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1650,7 +1825,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
             },
           ],
@@ -1668,7 +1843,8 @@ export const productData = {
             { type: "paragraph", content: "Electrified ET Trim Fail Secure." },
             {
               type: "bullet",
-              content: "The chassis body itself is what makes this handed (need full new chassis assembly)",
+              content:
+                "The chassis body itself is what makes this handed (need full new chassis assembly)",
             },
             {
               type: "bullet",
@@ -1683,7 +1859,7 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8600 Parts Pages (26-45) to find chassis",
+              content: "8700 Parts Pages (26-45) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=26",
             },
           ],
@@ -1709,11 +1885,12 @@ export const productData = {
               type: "paragraph",
               content: "Night Latch with Key Retracts Latch.",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1726,7 +1903,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1740,11 +1917,12 @@ export const productData = {
               type: "paragraph",
               content: "Key unlocks Trim and Trim retracts latch.",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1754,9 +1932,10 @@ export const productData = {
               type: "link",
               content: "8800 Parts Pages (46-49) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=46",
-            },          ],
+            },
+          ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1770,11 +1949,12 @@ export const productData = {
               type: "paragraph",
               content: "No outside operation or Pull Only.",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1787,7 +1967,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1797,12 +1977,17 @@ export const productData = {
           functionCode: "8813",
           handing: "reversible",
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim." },
-                        {
-              type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+            {
+              type: "paragraph",
+              content:
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
-                        {
+            {
+              type: "bullet",
+              content:
+                "This function is fully reversible and does not require specific handing.",
+            },
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1812,7 +1997,8 @@ export const productData = {
               type: "link",
               content: "8800 Parts Pages (46-49) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=46",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -1825,11 +2011,12 @@ export const productData = {
           handing: "reversible",
           explanation: [
             { type: "paragraph", content: "Passage Only." },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1842,7 +2029,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1857,11 +2044,12 @@ export const productData = {
               content:
                 "Key Outside Retracts Latch and Key Inside Unlocks/Locks Outside Trim.",
             },
-                        {
+            {
               type: "bullet",
-              content: "The Inside Cylinder on the chassis is what makes this handed. (Cylinder always need to be on the top end no matter which side of door)",
+              content:
+                "The Inside Cylinder on the chassis is what makes this handed. (Cylinder always need to be on the top end no matter which side of door)",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1871,7 +2059,8 @@ export const productData = {
               type: "link",
               content: "8800 Parts Pages (50-63) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=50",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -1885,14 +2074,14 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "Passage With Pull Trim",
+              content: "Passage With Pull Trim",
             },
-                        {
+            {
               type: "bullet",
-              content: "The Thumbpiece on the pull, the Chassis itself, and the thumbpiece lever in the assembly are what makes this handed",
+              content:
+                "The Thumbpiece on the pull, the Chassis itself, and the thumbpiece lever in the assembly are what makes this handed",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1902,7 +2091,8 @@ export const productData = {
               type: "link",
               content: "8800 Parts Pages (64-68) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=64",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -1919,11 +2109,12 @@ export const productData = {
               content:
                 "Freewheeling Trim with No outside operation (Dummy Trim).",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1936,7 +2127,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1948,13 +2139,15 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+              content:
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1964,9 +2157,10 @@ export const productData = {
               type: "link",
               content: "8800 Parts Pages (46-49) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=46",
-            },          ],
+            },
+          ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -1980,11 +2174,12 @@ export const productData = {
               type: "paragraph",
               content: "Freewheeling Trim with Key Retracts Latch.",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -1997,7 +2192,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2012,11 +2207,12 @@ export const productData = {
               content:
                 "Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -2029,13 +2225,13 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
           },
         },
-                {
+        {
           functionCode: "8863",
           handing: "handed",
           explanation: [
@@ -2044,15 +2240,17 @@ export const productData = {
               content:
                 "Classroom With Pull Trim (Key unlocks thumbpiece, thumbpiece retract latch)",
             },
-                        {
+            {
               type: "bullet",
-              content: "The Thumbpiece on the pull, the Chassis itself, and the thumbpiece lever in the assembly are what makes this handed",
+              content:
+                "The Thumbpiece on the pull, the Chassis itself, and the thumbpiece lever in the assembly are what makes this handed",
             },
-                                    {
+            {
               type: "bullet",
-              content: "New chassis and new pull trim part# can be grabbed from the part finder below",
+              content:
+                "New chassis and new pull trim part# can be grabbed from the part finder below",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -2060,9 +2258,10 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8800 Parts Pages (64-68) to find chassis",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=64",
-            },          ],
+              content: "8800 Parts Pages (69-73) to find chassis",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=69",
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2070,7 +2269,7 @@ export const productData = {
             rhr: Images.rhr,
           },
         },
-                        {
+        {
           functionCode: "8866",
           handing: "handed",
           explanation: [
@@ -2079,15 +2278,17 @@ export const productData = {
               content:
                 "Classroom Security With Pull Trim - Key Outside Retracts Latch and Key Inside Unlocks/Locks Outside Thumbpiece.",
             },
-                        {
+            {
               type: "bullet",
-              content: "The Thumbpiece on the pull, the Chassis itself, Cylinder placement on inside chassis, and the thumbpiece lever in the assembly are what makes this handed",
+              content:
+                "The Thumbpiece on the pull, the Chassis itself, Cylinder placement on inside chassis, and the thumbpiece lever in the assembly are what makes this handed",
             },
-                                    {
+            {
               type: "bullet",
-              content: "New chassis and new pull trim part# can be grabbed from the part finder below",
+              content:
+                "New chassis and new pull trim part# can be grabbed from the part finder below",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -2095,9 +2296,10 @@ export const productData = {
             },
             {
               type: "link",
-              content: "8800 Parts Pages (64-68) to find chassis",
+              content: "8800 Parts Pages (74-87) to find chassis",
               url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=64",
-            },          ],
+            },
+          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2110,11 +2312,12 @@ export const productData = {
           handing: "reversible",
           explanation: [
             { type: "paragraph", content: "Electrified ET Trim Fail Safe." },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -2127,7 +2330,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2138,11 +2341,12 @@ export const productData = {
           handing: "reversible",
           explanation: [
             { type: "paragraph", content: "Electrified ET Trim Fail Secure." },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -2155,7 +2359,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2169,11 +2373,12 @@ export const productData = {
               type: "paragraph",
               content: "Electrified ET Trim Fail Safe with Key Retracts Latch.",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -2186,7 +2391,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2201,11 +2406,12 @@ export const productData = {
               content:
                 "Electrified ET Trim Fail Secure with Key Retracts Latch.",
             },
-                        {
+            {
               type: "bullet",
-              content: "This function is fully reversible and does not require specific handing.",
+              content:
+                "This function is fully reversible and does not require specific handing.",
             },
-                        {
+            {
               type: "link",
               content:
                 "Need Help finding the right part? Visit my Parts Lookup Tool",
@@ -2218,7 +2424,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2237,12 +2443,28 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Night Latch with Key Retracts Latch feature.",
+              content: "Night Latch - Key Retracts Latch.",
             },
             {
               type: "bullet",
               content:
-                "Mortise locks are inherently handed due to the design of the latchbolt and auxiliary latch.",
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
             },
           ],
           visuals: {
@@ -2258,9 +2480,29 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Key unlocks Trim and Trim retracts latch.",
+              content: "Storeroom - Key unlocks Trim and Trim retracts latch.",
             },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },          
           ],
           visuals: {
             lh: Images.lh,
@@ -2275,7 +2517,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "No outside operation or Pull Only.",
+              content: "Exit Only - No outside operation or Pull Only.",
             },
             { type: "bullet", content: "Mortise locks are inherently handed." },
           ],
@@ -2290,9 +2532,32 @@ export const productData = {
           functionCode: "8913",
           handing: "handed",
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim." },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
-          ],
+            {
+              type: "paragraph",
+              content:
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
+            },
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2304,9 +2569,28 @@ export const productData = {
           functionCode: "8915",
           handing: "handed",
           explanation: [
-            { type: "paragraph", content: "Passage Only." },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
-          ],
+            { type: "paragraph", content: "Passage (Free Entry at all times)." },
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2321,10 +2605,29 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "Key Outside Retracts Latch and Key Inside Unlocks/Locks Outside Trim.",
+                "Classroom Security - Key Outside Retracts Latch and Key Inside Unlocks/Locks Outside Trim.",
             },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
-          ],
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },          ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2339,10 +2642,29 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "Freewheeling Trim with No outside operation (Dummy Trim).",
+                "Freewheeling Dummy Trim with No outside operation.",
             },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
-          ],
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },           ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2356,10 +2678,30 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+              content:
+                "Freewheeling Classroom - Key Outside Unlocks/locks Trim.",
             },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
-          ],
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },           ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2373,10 +2715,101 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Freewheeling Trim with Key Retracts Latch.",
+              content: "Freewheeling Night Latch - Key Retracts Latch.",
             },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
-          ],
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },           ],
+          visuals: {
+            lh: Images.lh,
+            rh: Images.rh,
+            lhr: Images.lhr,
+            rhr: Images.rhr,
+          },
+        },
+                        {
+          functionCode: "8973",
+          handing: "handed",
+          explanation: [
+            {
+              type: "paragraph",
+              content: "Electrified ET Trim Fail Safe with no cylinder.",
+            },
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },           ],
+          visuals: {
+            lh: Images.lh,
+            rh: Images.rh,
+            lhr: Images.lhr,
+            rhr: Images.rhr,
+          },
+        },
+                {
+          functionCode: "8974",
+          handing: "handed",
+          explanation: [
+            {
+              type: "paragraph",
+              content: "Electrified ET Trim Fail Secure with no cylinder.",
+            },
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },           ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2392,8 +2825,27 @@ export const productData = {
               type: "paragraph",
               content: "Electrified ET Trim Fail Safe with Key Retracts Latch.",
             },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
-          ],
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },           ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2410,8 +2862,27 @@ export const productData = {
               content:
                 "Electrified ET Trim Fail Secure with Key Retracts Latch.",
             },
-            { type: "bullet", content: "Mortise locks are inherently handed." },
-          ],
+            {
+              type: "bullet",
+              content:
+                "Mortise locks are inherently handed due to the design.",
+            },
+                        {
+              type: "bullet",
+              content:
+                "New chassis and lockbody part# can be grabbed from the part finder below",
+            },
+            {
+              type: "link",
+              content:
+                "Need Help finding the right part? Visit my Parts Lookup Tool",
+              url: "https://sargent-parts.netlify.app/",
+            },
+            {
+              type: "link",
+              content: "8900 Parts Pages (89-103) to find chassis and lockbody",
+              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=89",
+            },           ],
           visuals: {
             lh: Images.lh,
             rh: Images.rh,
@@ -2432,24 +2903,15 @@ export const productData = {
           handing: "reversible", // Device is reversible.
           explanation: [
             { type: "paragraph", content: "Night Latch, Key Retracts Latch. " },
-            {
+
+                        {
               type: "bullet",
-              content: "This device is inherently reversible. ",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
-            },
+
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2459,28 +2921,15 @@ export const productData = {
           functionCode: "9810",
           handing: "reversible", // Device is reversible.
           explanation: [
-            {
-              type: "paragraph",
-              content: "No O/S Operation or Cylinder (Pull Only). ",
-            },
-            {
+            { type: "paragraph", content: "Exit Only - No outside operation or Pull Only. " },
+
+                        {
               type: "bullet",
-              content: "This device is inherently reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2491,24 +2940,14 @@ export const productData = {
           handing: "reversible", // Device is reversible.
           explanation: [
             { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim. " },
-            {
+
+                        {
               type: "bullet",
-              content: "This device is inherently reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2518,25 +2957,15 @@ export const productData = {
           functionCode: "9815",
           handing: "reversible", // Device is reversible.
           explanation: [
-            { type: "paragraph", content: "Passage Only (No cylinder). " },
-            {
+            { type: "paragraph", content: "Passage (Free Entry at all times). " },
+
+                        {
               type: "bullet",
-              content: "This device is inherently reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2544,27 +2973,16 @@ export const productData = {
         },
         {
           functionCode: "9828",
-          handing: "reversible", // Device is reversible.
+          handing: "handed", // Device is reversible.
           explanation: [
             { type: "paragraph", content: "Passage Only (No cylinder). " },
-            {
+                        {
               type: "bullet",
-              content: "This device is inherently reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2572,27 +2990,19 @@ export const productData = {
         },
         {
           functionCode: "9863",
-          handing: "reversible", // Device is reversible.
+          handing: "handed", // Device is reversible.
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim. " },
             {
+              type: "paragraph",
+              content: "Classroom - Key Outside Unlocks/locks Trim. ",
+            },
+                        {
               type: "bullet",
-              content: "This device is inherently reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2607,24 +3017,13 @@ export const productData = {
               content:
                 "Electrified ET Trim Fail Safe - Power Off, Unlocks Lever (No Cylinder). ",
             },
-            {
+                        {
               type: "bullet",
-              content: "This device is inherently reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2639,24 +3038,13 @@ export const productData = {
               content:
                 "Electrified ET Trim Fail Secure - Power Off, Locks Lever (No Cylinder). ",
             },
-            {
+                        {
               type: "bullet",
-              content: "This device is inherently reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2664,28 +3052,16 @@ export const productData = {
         },
         {
           functionCode: "9875",
-          handing: "handed", // Explicitly handed due to key retracts latch and specific device limitations.
+          handing: "reversible", // Explicitly handed due to key retracts latch and specific device limitations.
           explanation: [
             {
               type: "paragraph",
               content:
                 "Electrified ET Trim Fail Safe - Power Off, Unlocks Lever, Key Retracts Latch. Not available with 12-9800 devices. ",
             },
-            {
+                        {
               type: "bullet",
-              content:
-                "The key retracts latch feature makes this function handed. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -2697,28 +3073,16 @@ export const productData = {
         },
         {
           functionCode: "9876",
-          handing: "handed", // Explicitly handed due to key retracts latch and specific device limitations.
+          handing: "reversible", // Explicitly handed due to key retracts latch and specific device limitations.
           explanation: [
             {
               type: "paragraph",
               content:
                 "Electrified ET Trim Fail Secure - Power Off, Locks Lever, Key Retracts Latch. Not available with 12-9800 devices. ",
             },
-            {
+                        {
               type: "bullet",
-              content:
-                "The key retracts latch feature makes this function handed. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 6)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=6",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -2740,24 +3104,13 @@ export const productData = {
           handing: "reversible", // Device is non-handed/field reversible.
           explanation: [
             { type: "paragraph", content: "Key Retracts Latch. " },
-            {
+                        {
               type: "bullet",
-              content: "This device is Non-handed and field reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 7)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=7",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2772,24 +3125,13 @@ export const productData = {
               content:
                 "No O/S Operation or Cylinder (Pull Only) or Exit Only. ",
             },
-            {
+                        {
               type: "bullet",
-              content: "This device is Non-handed and field reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 7)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=7",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2800,24 +3142,13 @@ export const productData = {
           handing: "reversible", // Device is non-handed/field reversible.
           explanation: [
             { type: "paragraph", content: "Passage Only (No cylinder). " },
-            {
+                        {
               type: "bullet",
-              content: "This device is Non-handed and field reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 7)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=7",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2831,24 +3162,13 @@ export const productData = {
               type: "paragraph",
               content: "Key Outside Unlocks/locks Thumb Piece. ",
             },
-            {
+                        {
               type: "bullet",
-              content: "This device is Non-handed and field reversible. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 7)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=7",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2871,21 +3191,13 @@ export const productData = {
               content:
                 "Key unlocks Trim, Trim retracts latch/Trim relocks when key is removed. ",
             },
-            { type: "bullet", content: "This device is Non Handed. " },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 9)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=9",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2899,21 +3211,13 @@ export const productData = {
               type: "paragraph",
               content: "No outside Operation (No Cylinder). ",
             },
-            { type: "bullet", content: "This device is Non Handed. " },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 9)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=9",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2923,22 +3227,18 @@ export const productData = {
           functionCode: "9713",
           handing: "reversible", // Device is non-handed.
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim. " },
-            { type: "bullet", content: "This device is Non Handed. " },
             {
-              type: "link",
-              content: "View 90 Series Catalog (Page 9)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=9",
-            },
-            {
-              type: "link",
+              type: "paragraph",
               content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted. ",
+            },
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2949,21 +3249,13 @@ export const productData = {
           handing: "reversible", // Device is non-handed.
           explanation: [
             { type: "paragraph", content: "Passage Only (No cylinder). " },
-            { type: "bullet", content: "This device is Non Handed. " },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 9)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=9",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2974,21 +3266,13 @@ export const productData = {
           handing: "reversible", // Device is non-handed.
           explanation: [
             { type: "paragraph", content: "Passage Only (No cylinder). " },
-            { type: "bullet", content: "This device is Non Handed. " },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 9)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=9",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -2998,22 +3282,17 @@ export const productData = {
           functionCode: "9763",
           handing: "reversible", // Device is non-handed.
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim. " },
-            { type: "bullet", content: "This device is Non Handed. " },
             {
-              type: "link",
-              content: "View 90 Series Catalog (Page 9)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=9",
+              type: "paragraph",
+              content: "Classroom - Key Outside Unlocks/locks Trim. ",
             },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3028,21 +3307,13 @@ export const productData = {
               content:
                 "Electrified ET Trim - Fail Safe - Power Off, Unlocks Lever (No Cylinder). ",
             },
-            { type: "bullet", content: "This device is Non Handed. " },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 9)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=9",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3057,21 +3328,13 @@ export const productData = {
               content:
                 "Electrified ET Trim Fail Secure - Power Off, Locks Lever (No Cylinder). ",
             },
-            { type: "bullet", content: "This device is Non Handed. " },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 9)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=9",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3094,16 +3357,9 @@ export const productData = {
               content:
                 "Mortise locks are inherently handed; you must specify handing. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3126,16 +3382,9 @@ export const productData = {
               content:
                 "Mortise locks are inherently handed; you must specify handing. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3149,22 +3398,19 @@ export const productData = {
           functionCode: "9913",
           handing: "handed", // Device is handed.
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim. " },
+            {
+              type: "paragraph",
+              content:
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted. ",
+            },
             {
               type: "bullet",
               content:
                 "Mortise locks are inherently handed; you must specify handing. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3184,16 +3430,9 @@ export const productData = {
               content:
                 "Mortise locks are inherently handed; you must specify handing. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3213,16 +3452,9 @@ export const productData = {
               content:
                 "Mortise locks are inherently handed; you must specify handing. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3236,22 +3468,18 @@ export const productData = {
           functionCode: "9963",
           handing: "handed", // Device is handed.
           explanation: [
-            { type: "paragraph", content: "Classroom - Key Outside Unlocks/locks Trim. " },
+            {
+              type: "paragraph",
+              content: "Classroom - Key Outside Unlocks/locks Trim. ",
+            },
             {
               type: "bullet",
               content:
                 "Mortise locks are inherently handed; you must specify handing. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3274,16 +3502,9 @@ export const productData = {
               type: "bullet",
               content: "Mortise locks are inherently handed. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3306,16 +3527,9 @@ export const productData = {
               type: "bullet",
               content: "Mortise locks are inherently handed. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3338,16 +3552,9 @@ export const productData = {
               type: "bullet",
               content: "Mortise locks are inherently handed. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3370,16 +3577,9 @@ export const productData = {
               type: "bullet",
               content: "Mortise locks are inherently handed. ",
             },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 11)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=11",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+                        {
+              type: "bullet",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
@@ -3399,28 +3599,16 @@ export const productData = {
       functions: [
         {
           functionCode: "9404",
-          handing: "reversible", // Device is field reversible.
+          handing: "handed", 
           explanation: [
             { type: "paragraph", content: "Night Latch, Key Retracts Latch. " },
-            {
+                        {
               type: "bullet",
-              content:
-                "This device is Field Reversible. Order as RHRB or LHRB. ",
-            },
-            {
-              type: "link",
-              content: "View 90 Series Catalog (Page 12)",
-              url: "https://www.sargentlock.com/en/view-pdf?id=AADSS1014876&page=12",
-            },
-            {
-              type: "link",
-              content:
-                "Need Help finding the right part? Visit my Parts Lookup Tool",
-              url: "https://sargent-parts.netlify.app/",
+              content: "Contact TPS for more info on parts (techsupport.sargent@assaabloy.com)",
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3428,7 +3616,7 @@ export const productData = {
         },
         {
           functionCode: "9410",
-          handing: "reversible", // Device is field reversible.
+          handing: "handed", // Device is field reversible.
           explanation: [
             {
               type: "paragraph",
@@ -3452,7 +3640,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3495,7 +3683,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3508,7 +3696,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Classroom - Key Outside Unlocks/locks Trim.",
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
           ],
           visuals: {
@@ -3528,7 +3716,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3545,7 +3733,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3558,7 +3746,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
           ],
           visuals: {
@@ -3574,8 +3762,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Freewheeling Trim with Key Retracts Latch.",
+              content: "Freewheeling Trim with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -3591,8 +3778,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Electrified ET Trim Fail Safe with Key Retracts Latch.",
+              content: "Electrified ET Trim Fail Safe with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -3609,7 +3795,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Electrified ET Trim Fail Secure with Key Retracts Latch.",
+                "Electrified ET Trim Fail Secure with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -3638,7 +3824,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3650,8 +3836,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Key unlocks Trim and Trim retracts latch.",
+              content: "Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -3672,7 +3857,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3685,7 +3870,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Classroom - Key Outside Unlocks/locks Trim.",
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
           ],
           visuals: {
@@ -3705,7 +3890,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3722,7 +3907,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3735,7 +3920,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
           ],
           visuals: {
@@ -3752,7 +3937,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
+                "Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -3773,7 +3958,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3790,7 +3975,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3810,8 +3995,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Night Latch with Key Retracts Latch feature.",
+              content: "Night Latch with Key Retracts Latch feature.",
             },
           ],
           visuals: {
@@ -3827,8 +4011,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Key unlocks Trim and Trim retracts latch.",
+              content: "Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -3849,7 +4032,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3862,7 +4045,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Classroom - Key Outside Unlocks/locks Trim.",
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
           ],
           visuals: {
@@ -3882,7 +4065,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3899,7 +4082,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3912,7 +4095,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
           ],
           visuals: {
@@ -3928,8 +4111,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Freewheeling Trim with Key Retracts Latch.",
+              content: "Freewheeling Trim with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -3946,7 +4128,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
+                "Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -3967,7 +4149,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -3984,7 +4166,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4021,8 +4203,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Key unlocks Trim and Trim retracts latch.",
+              content: "Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -4043,7 +4224,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4056,7 +4237,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Classroom - Key Outside Unlocks/locks Trim.",
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
           ],
           visuals: {
@@ -4076,7 +4257,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4093,7 +4274,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4106,7 +4287,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
           ],
           visuals: {
@@ -4123,7 +4304,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
+                "Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -4144,7 +4325,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4161,7 +4342,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4186,7 +4367,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4198,8 +4379,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Key unlocks Trim and Trim retracts latch.",
+              content: "Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -4220,7 +4400,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4233,7 +4413,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Classroom - Key Outside Unlocks/locks Trim.",
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
           ],
           visuals: {
@@ -4253,7 +4433,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4270,7 +4450,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4283,7 +4463,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
           ],
           visuals: {
@@ -4300,7 +4480,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
+                "Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -4321,7 +4501,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4338,7 +4518,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4358,8 +4538,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Night Latch with Key Retracts Latch feature.",
+              content: "Night Latch with Key Retracts Latch feature.",
             },
           ],
           visuals: {
@@ -4375,8 +4554,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Key unlocks Trim and Trim retracts latch.",
+              content: "Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -4397,7 +4575,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4410,7 +4588,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Classroom - Key Outside Unlocks/locks Trim.",
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
           ],
           visuals: {
@@ -4430,7 +4608,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4443,7 +4621,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Key Outside Retracts Latch and Key Inside Unlocks/Locks Outside Trim.",
+                "Key Outside Retracts Latch and Key Inside Unlocks/Locks Outside Trim.",
             },
           ],
           visuals: {
@@ -4464,7 +4642,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4477,7 +4655,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
           ],
           visuals: {
@@ -4493,8 +4671,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Freewheeling Trim with Key Retracts Latch.",
+              content: "Freewheeling Trim with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -4511,7 +4688,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
+                "Freewheeling Trim with Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -4532,7 +4709,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4549,7 +4726,7 @@ export const productData = {
             },
           ],
           visuals: {
-                        lh: Images.lh,
+            lh: Images.lh,
             rh: Images.rh,
             lhr: Images.lhr,
             rhr: Images.rhr,
@@ -4561,8 +4738,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Electrified ET Trim Fail Safe with Key Retracts Latch.",
+              content: "Electrified ET Trim Fail Safe with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -4579,7 +4755,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Electrified ET Trim Fail Secure with Key Retracts Latch.",
+                "Electrified ET Trim Fail Secure with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -4603,8 +4779,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Night Latch with Key Retracts Latch feature.",
+              content: "Night Latch with Key Retracts Latch feature.",
             },
           ],
           visuals: {
@@ -4620,8 +4795,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Key unlocks Trim and Trim retracts latch.",
+              content: "Key unlocks Trim and Trim retracts latch.",
             },
           ],
           visuals: {
@@ -4637,8 +4811,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; No outside operation or Pull Only.",
+              content: "No outside operation or Pull Only.",
             },
           ],
           visuals: {
@@ -4655,7 +4828,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Classroom - Key Outside Unlocks/locks Trim.",
+                "Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
             },
           ],
           visuals: {
@@ -4671,7 +4844,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "This function is handed; Passage Only.",
+              content: "Passage Only.",
             },
           ],
           visuals: {
@@ -4688,7 +4861,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Key Outside Retracts Latch and Key Inside Unlocks/Locks Outside Trim.",
+                "Key Outside Retracts Latch and Key Inside Unlocks/Locks Outside Trim.",
             },
           ],
           visuals: {
@@ -4705,7 +4878,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with No outside operation (Dummy Trim).",
+                "Freewheeling Trim with No outside operation (Dummy Trim).",
             },
           ],
           visuals: {
@@ -4722,7 +4895,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
           ],
           visuals: {
@@ -4738,8 +4911,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Freewheeling Trim with Key Retracts Latch.",
+              content: "Freewheeling Trim with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -4755,8 +4927,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content:
-                "This function is handed; Electrified ET Trim Fail Safe with Key Retracts Latch.",
+              content: "Electrified ET Trim Fail Safe with Key Retracts Latch.",
             },
           ],
           visuals: {
@@ -4773,7 +4944,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "This function is handed; Electrified ET Trim Fail Secure with Key Retracts Latch.",
+                "Electrified ET Trim Fail Secure with Key Retracts Latch.",
             },
           ],
           visuals: {
