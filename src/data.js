@@ -7187,17 +7187,17 @@ export const productData = {
   ],
   boredLocks: [
     {
-      type: "10X with BHW Antiligature trim",
+      type: "10X with BHW Behavioural Health trim",
       handing: "handed",
       explanation: [
         {
           type: "paragraph",
-          content: "10X series with BHW Antiligature trim is handed due to the specific trim design.",
+          content: "10X series with BHW Behavioural Health trim is handed due to the specific trim design.",
         },
-        { type: "bullet", content: "Specialized anti-ligature trim makes this handed." },
+        { type: "bullet", content: "Specialized Behavioural Health trim makes this handed." },
         {
           type: "link",
-          content: "Contact TPS for more information on Antiligature trim (techsupport.sargent@assaabloy.com)",
+          content: "Contact TPS for more information on Behavioural Health trim (techsupport.sargent@assaabloy.com)",
           url: "mailto:techsupport.sargent@assaabloy.com",
         },
       ],
