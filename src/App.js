@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import './App.css';
 import { productData } from './data';
@@ -11,83 +11,92 @@ import ExplanationRenderer from './components/ExplanationRenderer'; // Import th
 const customSelectStyles = {
   control: (provided, state) => ({
     ...provided,
-    backgroundColor: '#f8f8f8',
-    borderColor: state.isFocused ? '#007bff' : '#ced4da',
-    boxShadow: state.isFocused ? '0 0 0 0.2rem rgba(0, 123, 255, 0.25)' : 'none',
-    borderRadius: '8px',
-    minHeight: '45px',
-    padding: '0 8px',
-    fontSize: '16px',
+    backgroundColor: 'var(--dark-surface)', // Matches app background in both modes
+    borderColor: state.isFocused ? 'var(--navy-accent)' : 'var(--border-dark)', // Dynamic border color
+    boxShadow: state.isFocused ? `0 0 0 1px var(--navy-accent), 0 0 0 0.25rem rgba(0, 123, 255, 0.25)` : 'none', // Enhanced focus shadow
+    borderRadius: '12px', // Slightly more rounded for modern look
+    minHeight: '55px', // Taller control for better touch targets
+    padding: '0 12px', // Increased padding inside
+    transition: 'all 0.3s ease-in-out', // Smooth transitions for interactions
     '&:hover': {
-      borderColor: '#007bff',
-     
+      borderColor: 'var(--navy-accent)', // Consistent hover border
     },
+    cursor: 'pointer', // Indicate interactivity
   }),
   placeholder: (provided) => ({
     ...provided,
-    color: '#6c757d',
-    fontSize: '16px',
+    color: 'var(--dark-text)', // Placeholder text color
+    fontSize: '22px', // Slightly smaller for balance
+    fontWeight: '500',
   }),
   singleValue: (provided) => ({
     ...provided,
-    color: '#343a40',
-    fontSize: '16px',
+    color: 'var(--dark-text-light)', // Selected value text color
+    fontSize: '22px', // Consistent with placeholder
+    fontWeight: '600',
   }),
   menu: (provided) => ({
     ...provided,
-    borderRadius: '8px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-    marginTop: '0px',
+    borderRadius: '12px', // Matches control border-radius
+    boxShadow: '0 8px 24px var(--shadow-dark)', // Larger, more prominent shadow
+    marginTop: '8px', // Space between control and menu
     zIndex: 9999,
-    
+    overflow: 'hidden', // Ensures rounded corners are respected
+    border: '1px solid var(--border-dark)', // Subtle border for the menu
   }),
   option: (provided, state) => ({
     ...provided,
-    backgroundColor: state.isFocused ? '#e9ecef' : 'white',
-    color: state.isSelected ? '#007bff' : '#343a40',
-    fontWeight: state.isSelected ? 'bold' : 'normal',
-    padding: '12px 20px',
-    fontSize: '16px',
+    backgroundColor: state.isSelected
+      ? 'var(--navy-accent)' // Selected option background
+      : state.isFocused
+        ? 'var(--navy-accent-hover)' // Focused option background
+        : 'var(--dark-surface)', // Default option background
+    color: state.isSelected ? 'var(--dark-text-light)' : 'var(--dark-text)', // Text color based on selection
+    fontWeight: state.isSelected ? '700' : '500', // Bold for selected, medium for others
+    padding: '15px 25px', // More padding for each option
+    fontSize: '20px', // Adjusted font size
+    transition: 'background-color 0.2s ease, color 0.2s ease', // Smooth hover effect
+    cursor: 'pointer',
     '&:active': {
-      backgroundColor: '#007bff',
-      color: 'white',
+      backgroundColor: 'var(--navy-accent)', // Stronger active state
+      color: 'var(--dark-text-light)',
     },
   }),
   indicatorSeparator: (provided) => ({
     ...provided,
-    backgroundColor: '#ced4da',
+    backgroundColor: 'var(--border-dark)', // Separator color
+    height: '60%', // Shorter separator for modern look
+    alignSelf: 'center',
   }),
   dropdownIndicator: (provided, state) => ({
     ...provided,
-    color: '#6c757d',
+    color: 'var(--dark-text)', // Arrow color
     '&:hover': {
-      color: '#0056b3',
+      color: 'var(--navy-accent)', // Hover color for arrow
     },
-    transition: 'transform 0.2s ease-in-out',
-    transform: state.isFocused ? 'rotate(180deg)' : null,
+    transition: 'transform 0.2s ease-in-out, color 0.2s ease',
+    transform: state.isFocused ? 'rotate(180deg)' : null, // Rotates arrow on focus
   }),
   clearIndicator: (provided) => ({
     ...provided,
-    color: '#dc3545',
+    color: 'var(--warning-dark)', // Clear icon color
     '&:hover': {
-      color: '#c82333',
+      color: 'var(--warning-dark)', // Darker clear icon on hover
     },
   }),
   groupHeading: (provided) => ({
     ...provided,
-    backgroundColor: '#f1f1f1',
-    color: '#495057',
-    padding: '10px 20px',
-    fontWeight: 'bold',
-    fontSize: '14px',
+    backgroundColor: 'var(--border-dark)', // Group heading background
+    color: 'var(--dark-text-light)', // Group heading text color
+    padding: '12px 25px',
+    fontWeight: '700',
+    fontSize: '15px', // Slightly larger group heading
     textTransform: 'uppercase',
-    letterSpacing: '0.5px',
-    borderBottom: '1px solid #e0e0e0',
-    marginBottom: '5px',
+    letterSpacing: '0.8px',
+    borderBottom: '1px solid var(--border-dark)',
   }),
   group: (provided) => ({
     ...provided,
-    paddingBottom: '10px',
   }),
 };
 
@@ -131,6 +140,16 @@ function App() {
   const [selectedSeriesOption, setSelectedSeriesOption] = useState(null);
   const [selectedFunctionOption, setSelectedFunctionOption] = useState(null);
   const [modalImageUrl, setModalImageUrl] = useState(null);
+  const [isDarkMode, setIsDarkMode] = useState(true); // State for dark mode
+
+  // Effect to apply/remove 'light-mode' class to body
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.remove('light-mode');
+    } else {
+      document.body.classList.add('light-mode');
+    }
+  }, [isDarkMode]);
 
   const seriesOptions = transformExitDevicesForSelect(productData);
 
@@ -165,6 +184,10 @@ function App() {
 
   const handleFunctionChange = (option) => {
     setSelectedFunctionOption(option);
+  };
+
+  const toggleTheme = () => {
+    setIsDarkMode(prevMode => !prevMode);
   };
 
   // Helper function to render visuals for both handed and reversible
@@ -307,6 +330,9 @@ function App() {
       <header className="App-header">
         <img src={Images.logo} alt="Sargent Logo" className="logo" />
         <h1>Sargent Product Handing Tool</h1>
+        <button className="theme-toggle-button" onClick={toggleTheme}>
+          <img src={isDarkMode ? Images.sun : Images.moon} alt={isDarkMode ? 'Sun icon for light mode' : 'Moon icon for dark mode'} className="theme-icon" />
+        </button>
       </header>
       <nav className="category-selection">
         <button onClick={() => handleCategoryChange("exitDevices")}

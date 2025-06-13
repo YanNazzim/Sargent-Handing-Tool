@@ -1,5 +1,33 @@
 /* src/App.css - Centered Layout & Enhanced Handing Visuals */
 
+/* --- Dark Mode Variables (Default) --- */
+:root {
+  --dark-bg: #1A1A2E;
+  --dark-surface: #2e2e58;
+  --dark-text: #d5d5d5;
+  --dark-text-light: #ffffff;
+  --navy-accent: #007BFF; /* A vibrant navy blue */
+  --navy-accent-hover: #0056B3; /* Darker navy for hover */
+  --warning-dark: #E74C3C; /* Red for warnings/errors */
+  --positive-dark: #2ECC71; /* Green for success/positive */
+  --border-dark: #31313e; /* Subtle border color */
+  --shadow-dark: rgba(0, 0, 0, 0.4); /* Darker, subtle shadow */
+}
+
+/* --- Light Mode Variables --- */
+body.light-mode {
+  --dark-bg: #f0f2f5; /* Light background */
+  --dark-surface: #ffffff; /* Light surface */
+  --dark-text: #333333; /* Darker text for light mode */
+  --dark-text-light: #000000; /* Even darker text for light mode */
+  --navy-accent: #49a1ff; /* Keep original accent for consistency */
+  --navy-accent-hover: #007bff; /* Keep original hover accent */
+  --warning-dark: #dc3545; /* Standard red for warnings */
+  --positive-dark: #28a745; /* Standard green for success */
+  --border-dark: #cccccc; /* Lighter border */
+  --shadow-dark: rgba(0, 0, 0, 0.1); /* Lighter, subtle shadow */
+}
+
 /* --- Fonts & Global Styles --- */
 /* Ensure you have this font imported or use a suitable fallback */
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap");
@@ -9,13 +37,18 @@ body {
   font-family: "Fredoka", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #170d9a, #87ceeb);
+  /* Use dark-bg for the primary background */
+  background: var(--dark-bg);
+  /* You can adjust your gradient for a subtle effect if desired, e.g.: */
+  /* background: linear-gradient(135deg, var(--dark-bg), #222238); */
   min-height: 100vh;
   display: flex; /* Use flexbox to center .App vertically and horizontally */
   justify-content: center;
   align-items: center;
-  color: #333;
+  /* General text color for the body */
+  color: var(--dark-text);
   overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
 }
 
 .App {
@@ -23,15 +56,19 @@ body {
   max-width: 1000px;
   margin: 20px auto; /* Keep this to center horizontally */
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.9);
+  /* Use dark-surface for the App background */
+  background-color: var(--dark-surface);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  /* Adjust shadow to be darker */
+  box-shadow: 0 15px 40px var(--shadow-dark);
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Use dark-surface or border-dark for border */
+  border: 1px solid var(--border-dark);
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 /* Pseudo-elements for background animations */
@@ -40,7 +77,8 @@ body {
   content: "";
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle at center, #170d9a, transparent);
+  /* Adjust gradient colors to fit dark theme */
+  background: radial-gradient(circle at center, var(--navy-accent), transparent);
   animation: blob-glow 15s infinite alternate;
   z-index: -1;
 }
@@ -58,7 +96,8 @@ body {
   height: 200px;
   bottom: -30px;
   right: -30px;
-  background: radial-gradient(circle at center, #87ceeb, transparent);
+  /* Use a slightly different accent color or transparency for the second blob */
+  background: radial-gradient(circle at center, var(--navy-accent-hover), transparent);
   animation-delay: 5s;
 }
 
@@ -89,7 +128,8 @@ body {
 .App-header {
   background-color: transparent;
   padding: 20px 0;
-  color: #2c3e50;
+  /* Adjust header text color to be slightly lighter than main text */
+  color: var(--dark-text-light);
   margin-bottom: 40px;
   text-align: center;
   display: flex;
@@ -97,13 +137,88 @@ body {
   align-items: center; /* Ensures logo and h1 are centered horizontally within the header */
 }
 
+/* Theme Toggle Button */
+.theme-toggle-button {
+  background-color: var(--navy-accent);
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px var(--shadow-dark);
+  position: absolute; /* Position it absolutely */
+  top: -10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+}
+
+/* src/App.css */
+
+/* ... (previous CSS code) ... */
+
+/* Theme Toggle Button */
+.theme-toggle-button {
+  background-color: var(--navy-accent);
+  border: solid 3px rgb(172, 172, 172);
+  border-radius: 50%; /* Make it circular */
+  width: 50px; /* Adjust button size as needed */
+  height: 50px; /* Adjust button size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px var(--shadow-dark);
+  position: absolute; /* Position it absolutely */
+  top: -10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--navy-accent-hover);
+  transform: scale(1.05); /* Slight scale on hover */
+  box-shadow: 0 4px 8px var(--shadow-dark);
+}
+
+.theme-toggle-button .theme-icon {
+  width: 70%; /* Default icon size within the button */
+  height: 70%; /* Default icon size within the button */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-button:hover .theme-icon {
+  transform: rotate(15deg); /* Optional: slight rotation on hover */
+}
+
+/* Specific sizing for the MOON icon (when in dark mode, no .light-mode class on body) */
+body:not(.light-mode) .theme-toggle-button .theme-icon {
+  width: 100%; /* Adjust this percentage for the moon icon */
+  height: 100%; /* Adjust this percentage for the moon icon */
+}
+
+/* Specific sizing for the SUN icon (when in light mode, .light-mode class on body) */
+body.light-mode .theme-toggle-button .theme-icon {
+  width: 65%; /* Adjust this percentage for the sun icon */
+  height: 65%; /* Adjust this percentage for the sun icon */
+}
+
+/* ... (rest of your CSS code) ... */
+
+
 /* Logo Styling */
 .logo {
   max-width: 240px;
   height: auto;
   margin-bottom: 15px;
   border-radius: 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Adjust shadow for dark theme */
+  box-shadow: 0 4px 10px var(--shadow-dark);
   transition: transform 0.3s ease;
 }
 
@@ -116,7 +231,8 @@ body {
   margin: 0;
   letter-spacing: 2px;
   font-weight: 700;
-  color: black;
+  /* Main heading color */
+  color: var(--dark-text);
   animation: text-pop 1s ease-out forwards;
 }
 
@@ -144,8 +260,9 @@ body {
 }
 
 .category-selection button {
-  background-color: #170d9a;
-  color: white;
+  /* Use navy-accent for button background */
+  background-color: var(--navy-accent);
+  color: var(--dark-text); /* Keep text light for contrast */
   border: none;
   padding: 12px 28px;
   border-radius: 30px;
@@ -153,7 +270,8 @@ body {
   font-size: 1.2em;
   font-weight: 600;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Adjust shadow for dark theme */
+  box-shadow: 0 5px 15px var(--shadow-dark);
   text-transform: uppercase;
   letter-spacing: 1px;
   animation: button-fade-in 0.8s ease-out forwards;
@@ -173,17 +291,19 @@ body {
 }
 
 .category-selection button:hover {
-  background-color: #006eff;
+  /* Use navy-accent-hover for hover state */
+  background-color: var(--navy-accent-hover);
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px var(--shadow-dark);
 }
 
 .category-selection button.active {
-  background-color: #4596ff;
-  color: #fff;
+  /* Use navy-accent-hover or a slightly different shade for active state */
+  background-color: var(--navy-accent-hover);
+  color: var(--dark-text);
   transform: translateY(-2px);
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
-  border: 2px solid #fff;
+  box-shadow: 0 7px 20px var(--shadow-dark);
+  border: 2px solid var(--dark-text); /* Border contrasting with button background */
 }
 
 /* --- Product Display Area --- */
@@ -201,15 +321,17 @@ body {
 }
 
 .product-display h2 {
-  color: #2c3e50;
+  /* Adjust heading color */
+  color: var(--dark-text);
   font-size: 2.5em;
   margin-bottom: 30px;
-  border-bottom: 3px solid #170d9a;
+  /* Use navy-accent for the border */
+  border-bottom: 3px solid var(--navy-accent);
   padding-bottom: 15px;
   width: 100%;
   max-width: 600px;
   font-weight: 600;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1); /* Keep a subtle dark shadow for readability */
   margin-left: auto; /* Ensure h2 centers */
   margin-right: auto; /* Ensure h2 centers */
 }
@@ -219,25 +341,33 @@ body {
   padding: 12px 20px;
   margin: 15px auto; /* Centers select dropdowns */
   border-radius: 10px;
-  border: 2px solid #87ceeb;
+  /* Use border-dark for border */
+  border: 2px solid var(--border-dark);
   width: 350px;
   max-width: 90%;
   font-size: 1.1rem;
-  background-color: #f0f8ff;
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  /* Use dark-surface or a slightly lighter shade for select background */
+  background-color: var(--dark-surface);
+  /* Adjust shadow */
+  box-shadow: inset 0 2px 5px var(--shadow-dark);
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236a0572%22%20d%3D%22M287%20197.39L146.2%206.6a18%2018%200%2000-25.5%200l-140.8%20190.79c-5.3%207.2-1.7%2017.3%208.5%2017.3h279.7c10.2%200%2013.8-10.1%208.5-17.3z%22%2F%3E%3C%2Fsvg%3E");
+  /* Change SVG fill color for dropdown arrow to match dark text */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23E0E0E0%22%20d%3D%22M287%20197.39L146.2%206.6a18%2018%200%2000-25.5%200l-140.8%20190.79c-5.3%207.2-1.7%2017.3%208.5%2017.3h279.7c10.2%200%2013.8-10.1%208.5-17.3z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size: 14px auto;
   cursor: pointer;
   transition: all 0.3s ease;
+  /* Ensure text in select is readable */
+  color: var(--dark-text);
 }
 
 .product-display select:focus {
   outline: none;
-  border-color: #006eff;
-  box-shadow: 0 0 0 5px rgba(45, 94, 255, 0.2);
+  /* Use navy-accent for focus border */
+  border-color: var(--navy-accent);
+  /* Adjust shadow for focus */
+  box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.2); /* Use RGBA based on navy-accent */
 }
 
 /* --- Handing Details Sections (Main Content Card) --- */
@@ -246,15 +376,19 @@ body {
 .reversible-info {
   margin: 40px auto; /* THIS CENTERS THE MAIN CARD */
   padding: 25px;
-  background-color: rgba(255, 255, 255, 0.7);
+  /* Use dark-surface for background */
+  background-color: var(--dark-surface);
   border-radius: 15px;
   width: 90%;
   max-width: 850px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* Adjust shadow for dark theme */
+  box-shadow: 0 8px 20px var(--shadow-dark);
   text-align: left; /* Keep text aligned left within the card */
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* Use border-dark for border */
+  border: 1px solid var(--border-dark);
   animation: slide-in 0.6s ease-out forwards;
   box-sizing: border-box;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 @keyframes slide-in {
@@ -270,18 +404,21 @@ body {
 
 .handing-details h4 {
   font-size: 2em;
-  color: #170d9a;
+  /* Use navy-accent for heading */
+  color: var(--navy-accent);
   margin-bottom: 20px;
-  border-bottom: 2px dashed #170d9a;
+  /* Use navy-accent for border */
+  border-bottom: 2px dashed var(--navy-accent);
   padding-bottom: 12px;
   font-weight: 600;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05); /* Keep subtle shadow */
   text-align: center; /* Centering this specific heading */
 }
 
 .handing-details p {
   font-size: 1.15em;
-  color: #444;
+  /* Use dark-text-light for paragraph text */
+  color: var(--dark-text-light);
   margin-bottom: 25px;
   line-height: 1.7;
 }
@@ -289,13 +426,13 @@ body {
 /* --- Warning & Positive Messages --- */
 .warning,
 .positive {
-  font-weight: 700;
+  font-weight: 600;
   padding: 20px 30px;
   border-radius: 12px;
   font-size: 1.25em;
   margin: 35px auto; /* Centers these message blocks */
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px var(--shadow-dark); /* Adjust shadow */
   animation: bounce-in 0.8s ease-out forwards;
   box-sizing: border-box;
 }
@@ -315,15 +452,17 @@ body {
 }
 
 .warning {
-  color: #c0392b;
-  background-color: #ffefef;
-  border: 2px solid #ffccbb;
+  /* Use warning-dark for text and adjust background/border */
+  color: var(--warning-dark);
+  background-color: rgba(231, 76, 60, 0.15); /* Semi-transparent warning-dark */
+  border: 2px solid var(--warning-dark);
 }
 
 .positive {
-  color: #27ae60;
-  background-color: #e6ffe6;
-  border: 2px solid #ccffbb;
+  /* Use positive-dark for text and adjust background/border */
+  color: var(--positive-dark);
+  background-color: rgba(46, 204, 113, 0.15); /* Semi-transparent positive-dark */
+  border: 2px solid var(--positive-dark);
 }
 
 /* --- Visuals Container (Card-based Layout) --- */
@@ -333,21 +472,31 @@ body {
 .explanation-bullet-list,
 .explanation-bullet-item {
   text-align: center;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
-.visuals {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centers the row of cards */
-  align-items: center;
-  gap: 25px;
-  margin-top: 40px;
-  background-color: transparent;
-  padding: 0;
-  border: none;
-  box-shadow: none;
-  text-align: center;
+.explanation-link a {
+  font-size: 1.5em;
+  color: var(--dark-text-light); /* Use var for link color */
+  text-decoration: underline;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+  transition: color 0.3s ease;
 }
+
+.explanation-link a:visited {
+  font-size: 1.2em;
+  color: var(--dark-text-light); /* Use var for visited link color */
+  text-decoration: italicized;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+  transition: color 0.3s ease;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+  margin-bottom: 20px;
+}
+
 
 /* --- Visuals Container (Card-based Layout) --- */
 .visuals {
@@ -356,7 +505,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 35px; /* Increased gap to accommodate larger cards */
-  margin-top: 40px;
+  margin-top: 50px;
   background-color: transparent;
   padding: 0;
   border: none;
@@ -371,12 +520,15 @@ body {
   align-items: center;
   text-align: center;
   /* Fixed width for a larger, consistent size */
-  width: 280px; /* SIGNIFICANTLY INCREASED CARD WIDTH */
-  padding: 25px; /* Increased padding for more internal space */
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 200px; /* SIGNIFICANTLY INCREASED CARD WIDTH */
+  padding: 15px; /* Increased padding for more internal space */
+  /* Use dark-surface or a slightly different shade for card background */
+  background-color: var(--dark-surface);
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* Adjust shadow */
+  box-shadow: 0 5px 15px var(--shadow-dark);
+  /* Use border-dark for border */
+  border: 1px solid var(--border-dark);
   transition: all 0.3s ease-in-out;
   animation: image-float 8s infinite ease-in-out;
   animation-delay: calc(var(--i) * 0.2s);
@@ -385,31 +537,33 @@ body {
 
 .visuals .handing-card:hover {
   transform: translateY(-8px) scale(1.03) rotate(0deg) !important;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 25px var(--shadow-dark);
 }
 
 .visuals img {
   width: 100%; /* Image fills its card width */
   width: 180px; /* Set a large max-width for the image itself */
   height: auto;
-  border: 4px solid #fff;
+  /* Use navy-accent for border */
+  border: 4px solid var(--navy-accent);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  /* Adjust shadow */
+  box-shadow: 0 4px 10px var(--shadow-dark);
   transition: transform 0.2s ease-in-out;
   margin-bottom: 15px; /* Increased margin for better separation */
 }
 
 .visuals img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px var(--shadow-dark);
 }
 
 .visuals p {
   margin-top: 0;
-  font-size: 1.15em; /* Slightly increased font size for better readability */
-  font-weight: 700;
-  color: #170d9a;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+  font-size: 1.5em; /* Slightly increased font size for better readability */
+  font-weight: 550;
+  /* Use navy-accent for text */
+  color: var(--navy-accent);
 }
 
 /* --- Specific Sections --- */
@@ -436,14 +590,16 @@ body {
 
 .functions-section h3 {
   font-size: 2.2em;
-  color: #2c3e50;
+  /* Adjust heading color */
+  color: var(--dark-text);
   margin-bottom: 25px;
-  border-bottom: 2px dotted #170d9a;
+  /* Use navy-accent for border */
+  border-bottom: 2px dotted var(--navy-accent);
   padding-bottom: 12px;
   width: 100%;
   max-width: 550px;
   font-weight: 600;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05); /* Keep subtle shadow */
   text-align: center; /* Centering this specific heading */
 }
 
@@ -479,6 +635,18 @@ body {
   .logo {
     max-width: 180px;
     margin-bottom: 10px;
+  }
+
+  .theme-toggle-button {
+    width: 45px;
+    height: 45px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .theme-toggle-button .theme-icon {
+    width: 65%;
+    height: 65%;
   }
 
   .category-selection {
@@ -585,6 +753,18 @@ body {
     margin-bottom: 8px;
   }
 
+  .theme-toggle-button {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .theme-toggle-button .theme-icon {
+    width: 60%;
+    height: 60%;
+  }
+
   .product-display select {
     width: 95%;
     padding: 10px 15px;
@@ -643,7 +823,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8); /* Darker overlay for dark mode */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -653,11 +833,13 @@ body {
 }
 
 .modal-content {
-  background-color: rgba(255, 255, 255, 0.95);
+  /* Use dark-surface for modal content background */
+  background-color: var(--dark-surface);
   padding: 30px; /* Increased padding to create space around the image */
   padding-top: 50px; /* Extra padding at the top for the X button */
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  /* Adjust shadow */
+  box-shadow: 0 10px 30px var(--shadow-dark);
   position: relative;
   max-width: 90%;
   max-height: 90%;
@@ -673,8 +855,9 @@ body {
   position: absolute; /* Positioned absolutely relative to .modal-content */
   top: 8px; /* Adjust top positioning as needed */
   right: 8px; /* Adjust right positioning as needed */
-  background-color: #ff2d55;
-  color: white;
+  /* Use warning-dark for close button */
+  background-color: var(--warning-dark);
+  color: var(--dark-text); /* Ensure text is visible */
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -686,12 +869,12 @@ body {
   justify-content: center;
   align-items: center;
   transition: background-color 0.2s ease, transform 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px var(--shadow-dark); /* Adjust shadow */
   z-index: 1001; /* Ensure close button is on top */
 }
 
 .modal-close-button:hover {
-  background-color: #ff5e7f;
+  background-color: var(--warning-dark); /* Keep consistent or slightly darken */
   transform: rotate(90deg);
 }
 
@@ -700,7 +883,7 @@ body {
   max-height: 75vh; /* Adjusted max-height to ensure space for the button/padding */
   display: block;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px var(--shadow-dark); /* Adjust shadow */
 }
 
 /* Modal Animations */
@@ -767,7 +950,7 @@ body {
   /* flex-basis: 45%; */
 
   /* Set a fixed width for desktop/larger screens */
-  width: 320px; /* Adjust this value as needed for your desired size */
+  width: 350px; /* Adjust this value as needed for your desired size */
   max-width: 45%; /* Use max-width for slight responsiveness when they are side-by-side */
   min-width: 250px; /* Ensure a minimum size */
 
@@ -779,7 +962,8 @@ body {
 .dropdown-label {
   font-size: 1.1em;
   font-weight: 600;
-  color: #2c3e50;
+  /* Adjust label color */
+  color: var(--dark-text-light);
   margin-bottom: 8px;
   text-align: center;
   display: block;
@@ -800,33 +984,4 @@ body {
 /* Adjustments for function section if it moves up */
 .exit-devices-section .functions-section {
     margin-top: 0;
-}
-
-/* --- Responsive Adjustments for Dropdowns and Labels --- */
-@media (max-width: 768px) {
-  .dropdowns-container {
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-  }
-
-  .series-dropdown-wrapper,
-  .function-dropdown-wrapper {
-    width: 100%; /* Take full width when stacked */
-    max-width: 100%; /* No max-width when stacked */
-    min-width: auto; /* Remove min-width constraint when stacked */
-  }
-
-  .dropdown-label {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  .dropdowns-container {
-    gap: 10px;
-  }
-  .dropdown-label {
-    font-size: 0.95em;
-  }
 }
