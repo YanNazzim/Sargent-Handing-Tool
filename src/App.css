@@ -16,8 +16,8 @@
 
 /* --- Light Mode Variables --- */
 body.light-mode {
-  --dark-bg: #f0f2f5; /* Light background */
-  --dark-surface: #ffffff; /* Light surface */
+  --dark-bg: #cacaca; /* Light background */
+  --dark-surface: #e5e5e5; /* Light surface */
   --dark-text: #333333; /* Darker text for light mode */
   --dark-text-light: #000000; /* Even darker text for light mode */
   --navy-accent: #49a1ff; /* Keep original accent for consistency */

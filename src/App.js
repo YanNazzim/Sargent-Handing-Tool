@@ -139,6 +139,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSeriesOption, setSelectedSeriesOption] = useState(null);
   const [selectedFunctionOption, setSelectedFunctionOption] = useState(null);
+  const [selectedBoredLockOption, setSelectedBoredLockOption] = useState(null); // New state for bored locks
   const [modalImageUrl, setModalImageUrl] = useState(null);
   const [isDarkMode, setIsDarkMode] = useState(true); // State for dark mode
 
@@ -162,11 +163,21 @@ function App() {
       })) || []
     : [];
 
+  const boredLockOptions = productData.boredLocks.map(lock => ({
+    value: lock.type,
+    label: lock.type,
+  }));
+
   const currentFunctionDetails = selectedSeriesOption && selectedFunctionOption
     ? productData.exitDevices
       .find(d => d.series === selectedSeriesOption.value)
       ?.functions.find(f => f.functionCode === selectedFunctionOption.value)
     : null;
+
+  const currentBoredLockDetails = selectedBoredLockOption
+    ? productData.boredLocks.find(lock => lock.type === selectedBoredLockOption.value)
+    : null;
+
 
   const openModal = (url) => setModalImageUrl(url);
   const closeModal = () => setModalImageUrl(null);
@@ -175,6 +186,7 @@ function App() {
     setSelectedCategory(category);
     setSelectedSeriesOption(null);
     setSelectedFunctionOption(null);
+    setSelectedBoredLockOption(null); // Clear bored lock selection when category changes
   };
 
   const handleSeriesChange = (option) => {
@@ -184,6 +196,10 @@ function App() {
 
   const handleFunctionChange = (option) => {
     setSelectedFunctionOption(option);
+  };
+
+  const handleBoredLockChange = (option) => { // New handler for bored lock selection
+    setSelectedBoredLockOption(option);
   };
 
   const toggleTheme = () => {
@@ -300,9 +316,8 @@ function App() {
           )}
         </div>
       );
-    }
-    else if (selectedCategory === "mortiseLocks" || selectedCategory === "boredLocks") {
-      const lockData = productData[selectedCategory][0];
+    } else if (selectedCategory === "mortiseLocks") {
+      const lockData = productData[selectedCategory][0]; // Assuming only one entry for "All Mortise Locks"
       return (
         <div className="lock-details-section">
           <h2>{lockData.type}</h2>
@@ -317,6 +332,49 @@ function App() {
               <p className="positive">GOOD NEWS: This product type is REVERSIBLE.</p>
               <ExplanationRenderer contentArray={lockData.explanation} />
               {renderVisuals(lockData.visuals)} {/* Unified visual rendering */}
+            </div>
+          )}
+        </div>
+      );
+    } else if (selectedCategory === "boredLocks") {
+      return (
+        <div className="bored-locks-section">
+          <h2>Bored Locks</h2>
+          <div className="dropdowns-container">
+            <div className="bored-lock-dropdown-wrapper">
+              <label htmlFor="bored-lock-select" className="dropdown-label">Select Bored Lock Type</label>
+              <Select
+                id="bored-lock-select"
+                options={boredLockOptions}
+                onChange={handleBoredLockChange}
+                value={selectedBoredLockOption}
+                placeholder="Bored Lock Type"
+                isClearable
+                isSearchable
+                styles={customSelectStyles}
+                menuPlacement="top"
+                menuPortalTarget={document.body}
+                components={{ Menu: CustomMenu }}
+              />
+            </div>
+          </div>
+
+          {currentBoredLockDetails && (
+            <div className="bored-lock-details">
+              <h4>Details for {currentBoredLockDetails.type}</h4>
+              {currentBoredLockDetails.handing === "handed" ? (
+                <div className="handed-info">
+                  <p className="warning">WARNING: This bored lock type is HANDED.</p>
+                  <ExplanationRenderer contentArray={currentBoredLockDetails.explanation} />
+                  {renderVisuals(currentBoredLockDetails.visuals)}
+                </div>
+              ) : (
+                <div className="reversible-info">
+                  <p className="positive">GOOD NEWS: This bored lock type is REVERSIBLE.</p>
+                  <ExplanationRenderer contentArray={currentBoredLockDetails.explanation} />
+                  {renderVisuals(currentBoredLockDetails.visuals)}
+                </div>
+              )}
             </div>
           )}
         </div>

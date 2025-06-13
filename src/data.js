@@ -1022,7 +1022,8 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Electrified ET Trim Fail Safe.",
+              content:
+                "This function is fully reversible; Electrified ET Trim Fail Safe.",
             },
             {
               type: "link",
@@ -1433,7 +1434,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Electrified ET Trim Fail Safe.",
+              content: "Electrified ET Trim Fail Safe. Power off = Unlocked. ",
             },
             {
               type: "bullet",
@@ -1482,7 +1483,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Electrified ET Trim Fail Secure.",
+              content: "Electrified ET Trim Fail Secure. Power off = Locked.",
             },
             {
               type: "bullet",
@@ -2588,7 +2589,7 @@ export const productData = {
             {
               type: "paragraph",
               content:
-                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim. Trim can remain unlocked if wanted.",
+                "Freewheeling Trim with Classroom - Key Outside Unlocks/locks Trim.",
             },
             {
               type: "bullet",
@@ -2925,10 +2926,7 @@ export const productData = {
           functionCode: "8315",
           handing: "handed",
           explanation: [
-            {
-              type: "paragraph",
-              content: "Passage Only.",
-            },
+            { type: "paragraph", content: "Passage Only." },
             {
               type: "bullet",
               content: "Lift Lever is what makes this handed",
@@ -5358,7 +5356,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Storeroom - Key unlocks Trim and Trim retracts latch.",
+              content: "Storeroom -Key unlocks Trim and Trim retracts latch.",
             },
             {
               type: "bullet",
@@ -7158,7 +7156,7 @@ export const productData = {
   mortiseLocks: [
     {
       type: "All Mortise Locks",
-      handing: "reversibe",
+      handing: "reversible",
       explanation: [
         {
           type: "paragraph",
@@ -7189,15 +7187,81 @@ export const productData = {
   ],
   boredLocks: [
     {
-      type: "All Bored Locks",
+      type: "10X with BHW Antiligature trim",
+      handing: "handed",
+      explanation: [
+        {
+          type: "paragraph",
+          content: "10X series with BHW Antiligature trim is handed due to the specific trim design.",
+        },
+        { type: "bullet", content: "Specialized anti-ligature trim makes this handed." },
+        {
+          type: "link",
+          content: "Contact TPS for more information on Antiligature trim (techsupport.sargent@assaabloy.com)",
+          url: "mailto:techsupport.sargent@assaabloy.com",
+        },
+      ],
+      visuals: {
+        lh: Images.lh,
+        rh: Images.rh,
+        lhr: Images.lhr,
+        rhr: Images.rhr,
+      },
+    },
+    {
+      type: "10X with VSL Indicator trim",
+      handing: "handed",
+      explanation: [
+        {
+          type: "paragraph",
+          content: "10X series with VSL Indicator trim is handed because of the visual indicator mechanism.",
+        },
+        { type: "bullet", content: "Indicator trim dictates handing." },
+        {
+          type: "link",
+          content: "Contact TPS for more information on VSL Indicator trim (techsupport.sargent@assaabloy.com)",
+          url: "mailto:techsupport.sargent@assaabloy.com",
+        },
+      ],
+      visuals: {
+        lh: Images.lh,
+        rh: Images.rh,
+        lhr: Images.lhr,
+        rhr: Images.rhr,
+      },
+    },
+    {
+      type: "DL Series",
+      handing: "handed",
+      explanation: [
+        {
+          type: "paragraph",
+          content: "DL Series bored locks are handed due to their specific internal mechanism or lever design.",
+        },
+        { type: "bullet", content: "DL Series design requires specific handing." },
+        {
+          type: "link",
+          content: "Contact TPS for more information on DL Series (techsupport.sargent@assaabloy.com)",
+          url: "mailto:techsupport.sargent@assaabloy.com",
+        },
+      ],
+      visuals: {
+        lh: Images.lh,
+        rh: Images.rh,
+        lhr: Images.lhr,
+        rhr: Images.rhr,
+      },
+    },
+    {
+      type: "All Other Bored Locks",
       handing: "reversible",
       explanation: [
         {
           type: "paragraph",
           content:
-            "Bored locks are typically reversible in the field and do not require specific handing unless a specific lever requires it.",
+            "Most other bored locks are typically reversible in the field and do not require specific handing.",
         },
-        { type: "bullet", content: "Often convertible on-site." },
+        { type: "bullet", content: "Generally convertible on-site." },
         {
           type: "link",
           content:
@@ -7206,10 +7270,7 @@ export const productData = {
         },
       ],
       visuals: {
-        lh: Images.lh,
-        rh: Images.rh,
-        lhr: Images.lhr,
-        rhr: Images.rhr,
+        generic: Images.reversible,
       },
     },
   ],
