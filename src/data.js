@@ -3478,7 +3478,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Electrified ET Trim Fail Safe (Power off = Unlocked).",
+              content: "Electrified ET Trim Fail Safe (Power Off = Unlocked).",
             },
             {
               type: "bullet",
@@ -3514,7 +3514,7 @@ export const productData = {
           explanation: [
             {
               type: "paragraph",
-              content: "Electrified ET Trim Fail Secure (Power off = Locked).",
+              content: "Electrified ET Trim Fail Secure (Power Off = Locked).",
             },
             {
               type: "bullet",
@@ -7155,16 +7155,15 @@ export const productData = {
   ],
   mortiseLocks: [
     {
-      type: "All Mortise Locks",
+      type: "Mortise Locks with Standard Lever/Knob Trim",
       handing: "reversible",
       explanation: [
         {
           type: "paragraph",
           content:
-            "Mortise locks are are typically reversible in the field and do not require specific handing unless a specific lever requires it.",
+            "Mortise locks with standard lever/knob trim are typically reversible in the field and do not require specific handing unless a specific lever requires it.",
         },
         { type: "bullet", content: "Often convertible on-site." },
-
         {
           type: "link",
           content: "View Video on how to rehand a mortise lock",
@@ -7175,6 +7174,34 @@ export const productData = {
           content:
             "Need Help finding the right part? Visit my Parts Lookup Tool",
           url: "https://sargent-parts.netlify.app/",
+        },
+      ],
+      visuals: {
+        lh: Images.lh,
+        rh: Images.rh,
+        lhr: Images.lhr,
+        rhr: Images.rhr,
+      },
+    },
+    {
+      type: "Mortise Locks with BHW/BHL Trims",
+      handing: "handed",
+      explanation: [
+        {
+          type: "paragraph",
+          content:
+            "Mortise locks with BHW (Behavioral Health Wide) or BHL (Behavioral Health Lever) trims are handed due to the specialized design of these trims to meet specific safety and operational requirements.",
+        },
+        {
+          type: "bullet",
+          content:
+            "The specific design for behavioral health applications dictates handing.",
+        },
+        {
+          type: "link",
+          content:
+            "Contact TPS for more information on BHW/BHL Trims (techsupport.sargent@assaabloy.com)",
+          url: "mailto:techsupport.sargent@assaabloy.com",
         },
       ],
       visuals: {

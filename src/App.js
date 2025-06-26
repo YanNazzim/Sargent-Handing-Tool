@@ -139,7 +139,8 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSeriesOption, setSelectedSeriesOption] = useState(null);
   const [selectedFunctionOption, setSelectedFunctionOption] = useState(null);
-  const [selectedBoredLockOption, setSelectedBoredLockOption] = useState(null); // New state for bored locks
+  const [selectedBoredLockOption, setSelectedBoredLockOption] = useState(null);
+  const [selectedMortiseLockOption, setSelectedMortiseLockOption] = useState(null); // New state for mortise locks
   const [modalImageUrl, setModalImageUrl] = useState(null);
   const [isDarkMode, setIsDarkMode] = useState(true); // State for dark mode
 
@@ -168,6 +169,13 @@ function App() {
     label: lock.type,
   }));
 
+  // New options for mortise locks dropdown
+  const mortiseLockOptions = productData.mortiseLocks.map(lock => ({
+    value: lock.type,
+    label: lock.type,
+  }));
+
+
   const currentFunctionDetails = selectedSeriesOption && selectedFunctionOption
     ? productData.exitDevices
       .find(d => d.series === selectedSeriesOption.value)
@@ -178,6 +186,11 @@ function App() {
     ? productData.boredLocks.find(lock => lock.type === selectedBoredLockOption.value)
     : null;
 
+  // New current mortise lock details
+  const currentMortiseLockDetails = selectedMortiseLockOption
+    ? productData.mortiseLocks.find(lock => lock.type === selectedMortiseLockOption.value)
+    : null;
+
 
   const openModal = (url) => setModalImageUrl(url);
   const closeModal = () => setModalImageUrl(null);
@@ -186,7 +199,8 @@ function App() {
     setSelectedCategory(category);
     setSelectedSeriesOption(null);
     setSelectedFunctionOption(null);
-    setSelectedBoredLockOption(null); // Clear bored lock selection when category changes
+    setSelectedBoredLockOption(null);
+    setSelectedMortiseLockOption(null); // Clear mortise lock selection when category changes
   };
 
   const handleSeriesChange = (option) => {
@@ -198,8 +212,13 @@ function App() {
     setSelectedFunctionOption(option);
   };
 
-  const handleBoredLockChange = (option) => { // New handler for bored lock selection
+  const handleBoredLockChange = (option) => {
     setSelectedBoredLockOption(option);
+  };
+
+  // New handler for mortise lock selection
+  const handleMortiseLockChange = (option) => {
+    setSelectedMortiseLockOption(option);
   };
 
   const toggleTheme = () => {
@@ -317,21 +336,44 @@ function App() {
         </div>
       );
     } else if (selectedCategory === "mortiseLocks") {
-      const lockData = productData[selectedCategory][0]; // Assuming only one entry for "All Mortise Locks"
       return (
-        <div className="lock-details-section">
-          <h2>{lockData.type}</h2>
-          {lockData.handing === "handed" ? (
-            <div className="handed-info">
-              <p className="warning">WARNING: This product type is HANDED.</p>
-              <ExplanationRenderer contentArray={lockData.explanation} />
-              {renderVisuals(lockData.visuals)} {/* Unified visual rendering */}
+        <div className="mortise-locks-section">
+          <h2>Mortise Locks</h2>
+          <div className="dropdowns-container">
+            <div className="mortise-lock-dropdown-wrapper">
+              <label htmlFor="mortise-lock-select" className="dropdown-label">Select Mortise Lock Type</label>
+              <Select
+                id="mortise-lock-select"
+                options={mortiseLockOptions}
+                onChange={handleMortiseLockChange}
+                value={selectedMortiseLockOption}
+                placeholder="Mortise Lock Type"
+                isClearable
+                isSearchable
+                styles={customSelectStyles}
+                menuPlacement="top"
+                menuPortalTarget={document.body}
+                components={{ Menu: CustomMenu }}
+              />
             </div>
-          ) : (
-            <div className="reversible-info">
-              <p className="positive">GOOD NEWS: This product type is REVERSIBLE.</p>
-              <ExplanationRenderer contentArray={lockData.explanation} />
-              {renderVisuals(lockData.visuals)} {/* Unified visual rendering */}
+          </div>
+
+          {currentMortiseLockDetails && (
+            <div className="mortise-lock-details">
+              <h4>Details for {currentMortiseLockDetails.type}</h4>
+              {currentMortiseLockDetails.handing === "handed" ? (
+                <div className="handed-info">
+                  <p className="warning">WARNING: This mortise lock type is HANDED.</p>
+                  <ExplanationRenderer contentArray={currentMortiseLockDetails.explanation} />
+                  {renderVisuals(currentMortiseLockDetails.visuals)}
+                </div>
+              ) : (
+                <div className="reversible-info">
+                  <p className="positive">GOOD NEWS: This mortise lock type is REVERSIBLE.</p>
+                  <ExplanationRenderer contentArray={currentMortiseLockDetails.explanation} />
+                  {renderVisuals(currentMortiseLockDetails.visuals)}
+                </div>
+              )}
             </div>
           )}
         </div>
